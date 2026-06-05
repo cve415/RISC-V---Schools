@@ -111,63 +111,16 @@ Building a world-class semiconductor education lab with RISC-V is uniquely affor
 
 ## 📊 Cost Breakdown and Hardware Options
 
-| Educational Tier              | Infrastructure Model          | Hardware Requirements & Recommendations                                | Estimated Cost            |
-| ----------------------------- | ----------------------------- | ---------------------------------------------------------------------- | ------------------------- |
-| Tier 1: Foundations           | Software Emulation            | Existing x86 or ARM desktop PCs, student laptops, Jupiter, Venus, QEMU | **$0**                    |
-| Tier 2: Embedded Systems      | Native RISC-V MCU Boards      | ESP32-H2, ESP32-C3, ESP32-C6, Milk-V Duo, SparkFun RED-V               | **$5–$15/student**        |
-| Tier 3: Advanced Architecture | FPGA Development Workstations | Digilent Basys 3, Digilent Nexys A7                                    | **$150–$350/workstation** |
-| Tier 3: Full OS Deployment    | RISC-V Linux SBCs             | VisionFive 2, Lichee Pi 4A                                             | **$70–$120/system**       |
+Educational Tier,Infrastructure Model,Hardware Requirements & Recommendations,Estimated Cost (Per Student / Workstation)
+Tier 1: Foundations,Non-RISC-V (Software Emulation),"Existing x86/ARM desktop lab PCs or student laptops running open-source instruction-set simulators (Jupiter, Venus, QEMU).",$0(No new hardware needed)
 
----
+Tier 2: Embedded Systems,Native RISC-V (Silicon MCU Boards),Microcontroller evaluation boards:• Espressif ESP32-H2 / ESP32-C3 / ESP32-C6 (Excellent Wi-Fi/BLE options)• Milk-V Duo (Dual-core CV1800B chip)• SparkFun RED-V RedBoard (Featuring SiFive FE310 or CH32V chips),$5 – $15(Highly scalable for large classrooms)
 
-## Tier 2 Recommended Hardware
+Tier 3: Advanced Architecture,Native RISC-V (FPGA Workbenches),FPGA Development Kits for synthesis & RTL simulation:• Digilent Basys 3 (Xilinx Artix-7 35T)• Digilent Nexys A7 (Xilinx Artix-7 50T or 100T),$150 – $350(Shared workstations across lab cycles)
 
-### Espressif Platforms
+Tier 3: System / Linux Deployment,Native RISC-V (Linux SBCs),"Single-Board Computers for operating system, compiler, and toolchain development:• StarFive VisionFive 2 (High-performance quad-core 64-bit)• Lichee Pi 4A (Altheat TH1520 platform)",$70 – $120(Ideal for operating systems courses)
 
-* ESP32-H2
-* ESP32-C3
-* ESP32-C6
-
-Benefits:
-
-* Low-cost
-* Wi-Fi capable
-* Bluetooth support
-* Large community ecosystem
-
-### Additional MCU Platforms
-
-* Milk-V Duo (CV1800B)
-* SparkFun RED-V RedBoard
-
----
-
-## Tier 3 FPGA Platforms
-
-### Digilent Basys 3
-
-* Xilinx Artix-7 35T FPGA
-* Excellent introductory FPGA platform
-
-### Digilent Nexys A7
-
-* Xilinx Artix-7 50T or 100T FPGA
-* Larger designs and advanced labs
-
----
-
-## Tier 3 Linux Platforms
-
-### StarFive VisionFive 2
-
-* Quad-core 64-bit RISC-V processor
-* Linux-capable development platform
-
-### Lichee Pi 4A
-
-* TH1520-based RISC-V SBC
-* Suitable for OS and toolchain development
-
+Tier 3: Next-Gen Dev Workstations,Native RISC-V (Modular Laptop / Hardware Integration),"Premium Developer Hardware:• DeepComputing DC-ROMA RISC-V Mainboard III (SpacemiT K3, first laptop mainboard to support the RVA23 profile, up to 60 TOPS general-purpose AI computing, fully compatible with the Framework Laptop 13 architecture)","$699.00(Designed for advanced capstones, AI workloads, and graduate researchers)"
 ---
 
 # 💡 Cost-Saving Strategy
