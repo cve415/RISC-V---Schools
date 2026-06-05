@@ -1,6 +1,4 @@
-# RISC-V University Program Framework
-
-**Sponsored Framework by RISC-V International**
+# University Program Framework
 
 This program provides an open, accessible, and progressive blueprint for universities to transition or expand their Computer Science (CS) and Computer Engineering (CE) curricula into the RISC-V ecosystem.
 
@@ -399,4 +397,4 @@ Recommended navigation structure:
 
 # Conclusion
 
-The RISC-V University Program Framework provides a scalable path from introductory computer systems education to advanced semiconductor and system-on-chip design. Through free software tools, low-cost embedded hardware, and open-source curriculum resources, universities can establish modern computer engineering programs with minimal barriers to entry while preparing students for careers in semiconductors, embedded systems, computer architecture, and open hardware development.
+This Program Framework provides a scalable path from introductory computer systems education to advanced semiconductor and system-on-chip design. Through free software tools, low-cost embedded hardware, and open-source curriculum resources, universities can establish modern computer engineering programs with minimal barriers to entry while preparing students for careers in semiconductors, embedded systems, computer architecture, and open hardware development.
