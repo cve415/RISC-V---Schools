@@ -1,0 +1,142 @@
+[
+  {
+    "id": "uc-berkeley",
+    "name": "University of California, Berkeley",
+    "country": "USA",
+    "tier_level": 3,
+    "hardware_focus": [
+      "Software Emulation",
+      "FPGA Workbenches"
+    ],
+    "contact_person": "EECS Department Coordinator",
+    "website": "https://bar.eecs.berkeley.edu",
+    "is_active_chapter": true
+  },
+  {
+    "id": "eth-zurich",
+    "name": "ETH Zürich",
+    "country": "Switzerland",
+    "tier_level": 3,
+    "hardware_focus": [
+      "Silicon MCU Boards",
+      "Linux SBCs",
+      "Custom RTL / ASIC Design"
+    ],
+    "contact_person": "PULP Platform Lab Leader",
+    "website": "https://ee.ethz.ch",
+    "is_active_chapter": true
+  },
+  {
+    "id": "iit-madras",
+    "name": "Indian Institute of Technology Madras",
+    "country": "India",
+    "tier_level": 3,
+    "hardware_focus": [
+      "FPGA Workbenches",
+      "SHAKTI Processor Ecosystem"
+    ],
+    "contact_person": "RISE Lab Coordinator",
+    "website": "https://shakti.org.in",
+    "is_active_chapter": true
+  },
+  {
+    "id": "mit",
+    "name": "Massachusetts Institute of Technology",
+    "country": "USA",
+    "tier_level": 3,
+    "hardware_focus": [
+      "Software Emulation",
+      "Custom RTL / Bluespec Design"
+    ],
+    "contact_person": "CSAIL Research Admin",
+    "website": "https://www.csail.mit.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "bsc",
+    "name": "Barcelona Supercomputing Center / Universitat Politècnica de Catalunya",
+    "country": "Spain",
+    "tier_level": 3,
+    "hardware_focus": [
+      "Linux SBCs",
+      "High-Performance Computing Cores"
+    ],
+    "contact_person": "HPC Architecture Lead",
+    "website": "https://www.bsc.es",
+    "is_active_chapter": true
+  },
+  {
+    "id": "polimi",
+    "name": "Politecnico di Milano",
+    "country": "Italy",
+    "tier_level": 2,
+    "hardware_focus": [
+      "Software Emulation",
+      "Silicon MCU Boards"
+    ],
+    "contact_person": "DEIB Department Chair",
+    "website": "https://www.deib.polimi.it",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ctu-prague",
+    "name": "Czech Technical University in Prague",
+    "country": "Czech Republic",
+    "tier_level": 2,
+    "hardware_focus": [
+      "Software Emulation",
+      "Silicon MCU Boards"
+    ],
+    "contact_person": "FEE Architecture Faculty",
+    "website": "https://fel.cvut.cz",
+    "is_active_chapter": true
+  },
+  {
+    "id": "chalmers",
+    "name": "Chalmers University of Technology",
+    "country": "Sweden",
+    "tier_level": 3,
+    "hardware_focus": [
+      "Software Emulation",
+      "FPGA Workbenches"
+    ],
+    "contact_person": "Computer Science Faculty",
+    "website": "https://www.chalmers.se",
+    "is_active_chapter": false
+  },
+  {
+    "id": "rice-university",
+    "name": "Rice University",
+    "country": "USA",
+    "tier_level": 2,
+    "hardware_focus": [
+      "Software Emulation",
+      "Silicon MCU Boards"
+    ],
+    "contact_person": "RVR Lab Director",
+    "website": "https://riscv.rice.edu",
+    "is_active_chapter": true
+  },
+  {
+    "id": "miami-university",
+    "name": "Miami University",
+    "country": "USA",
+    "tier_level": 2,
+    "hardware_focus": [
+      "Software Emulation",
+      "Silicon MCU Boards"
+    ],
+    "contact_person": "ECE Lab Coordinator",
+    "website": "https://miamioh.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "asu",
+    "name": "Arizona State University",
+    "country": "USA",
+    "tier_level": 3,
+    "hardware_focus": [
+      "FPGA Workbenches",
+      "Secure Microelectronics Design"
+    ],
+    "contact_person": "STAM Center Admin
