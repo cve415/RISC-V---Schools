@@ -4,7 +4,7 @@
 
 ## Overview
 
-This document maps the leading U.S. academic institutions integrating RISC-V into core engineering curricula and advanced research. These institutions are the primary feeders for the next generation of silicon architects and RTL engineers.
+This repository maps the leading U.S. academic institutions integrating RISC-V into core engineering curricula and advanced research. These institutions are the primary feeders for the next generation of silicon architects and RTL engineers.
 
 ---
 
