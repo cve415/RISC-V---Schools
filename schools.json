@@ -3,7 +3,7 @@
     "id": "uc-berkeley",
     "name": "University of California, Berkeley",
     "country": "USA",
-    "tier_level": 3,
+    "tier_level": 1,
     "hardware_focus": [
       "Software Emulation",
       "FPGA Workbenches"
@@ -43,7 +43,7 @@
     "id": "mit",
     "name": "Massachusetts Institute of Technology",
     "country": "USA",
-    "tier_level": 3,
+    "tier_level": 1,
     "hardware_focus": [
       "Software Emulation",
       "Custom RTL / Bluespec Design"
@@ -108,7 +108,7 @@
     "id": "rice-university",
     "name": "Rice University",
     "country": "USA",
-    "tier_level": 2,
+    "tier_level": 1,
     "hardware_focus": [
       "Software Emulation",
       "Silicon MCU Boards"
@@ -134,9 +134,224 @@
     "id": "asu",
     "name": "Arizona State University",
     "country": "USA",
-    "tier_level": 3,
+    "tier_level": 1,
     "hardware_focus": [
       "FPGA Workbenches",
       "Secure Microelectronics Design"
     ],
-    "contact_person": "STAM Center Admin
+    "contact_person": "STAM Center Admin",
+    "website": "https://ecee.engineering.asu.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "stanford",
+    "name": "Stanford University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Software Emulation",
+      "Hardware/Software Interfaces"
+    ],
+    "contact_person": "EE/CS Department Admin",
+    "website": "https://ee.stanford.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "cmu",
+    "name": "Carnegie Mellon University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Verified & High-Assurance System Design"
+    ],
+    "contact_person": "ECE Department Academic Coordinator",
+    "website": "https://www.ece.cmu.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uiuc",
+    "name": "University of Illinois Urbana-Champaign",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Processor Labs",
+      "Research Prototypes"
+    ],
+    "contact_person": "ECE Illinois Coordinator",
+    "website": "https://ece.illinois.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "upenn",
+    "name": "University of Pennsylvania",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Custom RV32IM Cores",
+      "Hardware + Software Bridging"
+    ],
+    "contact_person": "CIS Department Admin",
+    "website": "https://www.cis.upenn.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "unlv",
+    "name": "University of Nevada, Las Vegas",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "RVfpga Initiative",
+      "Architecture Labs"
+    ],
+    "contact_person": "ECE Lab Director",
+    "website": "https://www.unlv.edu/ece",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ut-arlington",
+    "name": "University of Texas at Arlington",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Custom RISC-V on FPGA"
+    ],
+    "contact_person": "CSE Department Admin",
+    "website": "https://www.uta.edu/cse",
+    "is_active_chapter": false
+  },
+  {
+    "id": "portland-state",
+    "name": "Portland State University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "SoC Design"
+    ],
+    "contact_person": "ECE Faculty Representative",
+    "website": "https://www.pdx.edu/computer-engineering",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-michigan",
+    "name": "University of Michigan",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Out-of-Order CPU Design"
+    ],
+    "contact_person": "EECS Department Coordinator",
+    "website": "https://eecs.engin.umich.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-pittsburgh",
+    "name": "University of Pittsburgh",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Resilient & High-Performance Systems"
+    ],
+    "contact_person": "ECE Department Admin",
+    "website": "https://www.engineering.pitt.edu/ece",
+    "is_active_chapter": false
+  },
+  {
+    "id": "penn-state",
+    "name": "Penn State University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Space-Grade & Radiation-Hardened Architectures"
+    ],
+    "contact_person": "EECS Academic Office",
+    "website": "https://eecs.psu.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "purdue",
+    "name": "Purdue University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "SoC Design",
+      "Hardware Verification"
+    ],
+    "contact_person": "ECE Academic Advisor",
+    "website": "https://engineering.purdue.edu/ECE",
+    "is_active_chapter": false
+  },
+  {
+    "id": "georgia-tech",
+    "name": "Georgia Institute of Technology",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Many-Core Systems",
+      "AI Accelerator Research"
+    ],
+    "contact_person": "ECE School Contact",
+    "website": "https://ece.gatech.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uc-san-diego",
+    "name": "University of California, San Diego",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Hardware-Security Education"
+    ],
+    "contact_person": "CSE Department Admin",
+    "website": "https://cse.ucsd.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-washington",
+    "name": "University of Washington",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "VLSI Design",
+      "Architecture Instruction"
+    ],
+    "contact_person": "Paul G. Allen School Admin",
+    "website": "https://www.cs.washington.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "cornell",
+    "name": "Cornell University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Hardware/Software Interface"
+    ],
+    "contact_person": "CS Department Coordinator",
+    "website": "https://cs.cornell.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "tufts",
+    "name": "Tufts University",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Machine-Level Computing (RV32I)"
+    ],
+    "contact_person": "CS Department Chair",
+    "website": "https://cs.tufts.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uc-santa-cruz",
+    "name": "University of California, Santa Cruz",
+    "country": "USA",
+    "tier_level": 1,
+    "hardware_focus": [
+      "Open-Source Hardware"
+    ],
+    "contact_person": "Baskin Engineering Advisor",
+    "website": "https://engineering.ucsc.edu",
+    "is_active_chapter": false
+  }
+]
