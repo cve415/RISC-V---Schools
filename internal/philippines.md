@@ -12,9 +12,14 @@ Coverage spans all regions: NCR, CAR, Regions I–XIII, and BARMM.
 
 ## Community History
 
-**Christopher Misola** attempted to launch a RISC-V meetup group in the Philippines over five years ago — making him one of the earliest known RISC-V community organizers in the country. The effort predates most of the current academic adoption wave. His work represents unfinished groundwork worth reconnecting with: he likely built an early network of interested engineers and faculty that may still be active in embedded systems and open-hardware circles.
+**Christopher Misola** attempted to launch a RISC-V meetup group in the Philippines over five years ago — making him one of the earliest known RISC-V community organizers in the country. The effort predates most of the current academic adoption wave.
 
-*Action item:* Locate Christopher Misola on LinkedIn or the RISC-V International member directory and re-engage. He is a natural co-organizer for any revived Philippines RISC-V chapter or academic outreach initiative.
+- **Education:** De La Salle Araneta University — Computer Programming, 1991–1992
+- **Current role:** Part-time Teaching Fellow, Executive Course on Emerging Technologies and Anticipatory Governance (ECETAG) — Pasig, NCR
+- ECETAG sits at the intersection of emerging technology policy and governance, which means Misola has access to both academic and government decision-makers — a valuable bridge for RISC-V curriculum advocacy at the CHED or DOST level.
+- His prior meetup attempt likely produced an early network of interested engineers and faculty that may still be active in embedded systems and open-hardware circles.
+
+*Action item:* Re-engage Misola directly — he is a natural co-organizer for a revived Philippines RISC-V chapter and a credible internal advocate for open-ISA adoption within the ECETAG network and Pasig-area institutions.
 
 ---
 
