@@ -10,6 +10,14 @@ Coverage spans all regions: NCR, CAR, Regions I–XIII, and BARMM.
 
 ---
 
+## Community History
+
+**Christopher Misola** attempted to launch a RISC-V meetup group in the Philippines over five years ago — making him one of the earliest known RISC-V community organizers in the country. The effort predates most of the current academic adoption wave. His work represents unfinished groundwork worth reconnecting with: he likely built an early network of interested engineers and faculty that may still be active in embedded systems and open-hardware circles.
+
+*Action item:* Locate Christopher Misola on LinkedIn or the RISC-V International member directory and re-engage. He is a natural co-organizer for any revived Philippines RISC-V chapter or academic outreach initiative.
+
+---
+
 # Philippines RISC-V University Tracking
 
 ---
