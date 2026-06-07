@@ -303,7 +303,7 @@
     "id": "ict-cas",
     "name": "Institute of Computing Technology, Chinese Academy of Sciences (ICT/CAS)",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "Home of XiangShan \u2014 the highest-performance open-source RISC-V processor globally. 28nm and 14nm tapeouts completed.",
     "hardware_focus": [
@@ -317,7 +317,7 @@
     "id": "zju",
     "name": "Zhejiang University",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "Geographic anchor of China's RISC-V cluster. Joint research with Alibaba T-Head (XuanTie C906/C910 cores, Uncore PMU).",
     "hardware_focus": [
@@ -331,7 +331,7 @@
     "id": "tsinghua",
     "name": "Tsinghua University",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "China's top university. Patterson & Hennessy RISC-V Edition is the primary architecture textbook.",
     "hardware_focus": [
@@ -346,7 +346,7 @@
     "id": "sjtu",
     "name": "Shanghai Jiao Tong University",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "CS359 Computer Architecture and graduate courses use RISC-V. Active in national CPU design competitions.",
     "hardware_focus": [
@@ -361,7 +361,7 @@
     "id": "pku",
     "name": "Peking University",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "Adopted RISC-V as instructional ISA. Institute of Software contributes to open-source RISC-V toolchain development.",
     "hardware_focus": [
@@ -376,7 +376,7 @@
     "id": "ustc",
     "name": "University of Science and Technology of China",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "RISC-V pipeline implementation exercises in Computer Organization courses. Winner of national CPU design competitions.",
     "hardware_focus": [
@@ -390,7 +390,7 @@
     "id": "hust",
     "name": "Huazhong University of Science and Technology",
     "country": "China",
-    "region": "Asia",
+    "region": "China",
     "tier_level": 1,
     "description": "Strong processor design culture. Participates in the \u4e00\u751f\u4e00\u82af (One Life One Chip) national RISC-V tapeout program.",
     "hardware_focus": [
