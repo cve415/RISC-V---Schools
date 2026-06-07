@@ -6,7 +6,7 @@
 
 Europe is one of the three global centers of RISC-V academic gravity alongside the United States and China. European RISC-V academia is distinguished by three structural advantages: the **PULP Platform** (ETH Zurich / University of Bologna), which has produced the most widely adopted open-source RISC-V cores globally (CVA6, Ibex, Snitch); the **European Processor Initiative (EPI)** and a dense network of Horizon Europe research projects that institutionalize RISC-V across national boundaries; and the **Barcelona Supercomputing Center**, which anchors Spain's and Europe's safety-critical RISC-V research.
 
-Primary source: RISC-V Europe Summit 2023 poster session proceedings — institutions whose researchers presented documented RISC-V work are treated as confirmed. Additional entries draw on known research program records.
+Primary sources: RISC-V Europe Summit 2023 poster session proceedings and RISC-V Europe Summit 2025 keynote/talk content — institutions whose researchers presented documented RISC-V work are treated as confirmed. Additional entries draw on known research program records.
 
 This document covers **Tier 1 and Tier 2** only. No speculative entries.
 
@@ -31,6 +31,7 @@ The European anchor of RISC-V academia and one of the most important RISC-V inst
 - Snitch: ultra-compact RISC-V core for high-efficiency compute clusters
 - Computer Architecture courses at ETH Zurich use RISC-V as the primary ISA
 - Multiple RISC-V Europe 2023 poster presenters affiliated: **Thomas Benz, Paul Scheffler, Marco Bertuletti** (all ETH Zurich / Luca Benini group)
+- **RISC-V Europe 2025 keynote:** Luca Benini delivered "RISC-V: Enabling Open Physical AI" — focusing on deep domain specialization for efficient, safe, and reliable Physical AI chips on RISC-V. Confirms ETH's continued leadership at the frontier of RISC-V research directions.
 - Participant in European Processor Initiative (EPI) vector acceleration work
 
 ---
@@ -42,7 +43,8 @@ Co-originator of the PULP Platform with ETH Zurich. Prof. Luca Benini holds a du
 - PULP cluster architecture and energy-efficient RISC-V multi-core research
 - Graduate computer architecture courses use RISC-V; student teams contribute to open-source PULP cores
 - RISC-V silicon tapeouts including GAP8 (GreenWaves Technologies, spun out of Bologna/EPFL research)
-- One of Europe's clearest examples of academic RISC-V research becoming commercial silicon
+- **Marco Fariselli** (MSc Bologna 2019 → GreenWaves Technologies → Luxottica embedded AI): his 2025 summit talk on RISC-V for smart glasses traces a direct career arc from Bologna's academic RISC-V program to production edge AI silicon — one of the clearest examples of Bologna's graduate-to-industry RISC-V pipeline
+- One of Europe's clearest examples of academic RISC-V research becoming commercial silicon; Luca Benini's 2025 keynote further confirms Bologna's co-anchoring role
 
 ---
 
@@ -214,6 +216,9 @@ Dr. Gerard Rauwerda (Technolution, PhD from University of Twente): SmallSat RISC
 **Johannes Kepler University Linz — Linz**
 **Lucas Klemmer** (JKU PhD): DSL for visualizing RISC-V pipelines — RISC-V Europe 2023 presenter. Institute for Complex Systems research in RISC-V tooling, verification, and waveform analysis.
 
+**TU Wien (Vienna University of Technology) — Vienna**
+**Philipp Tomsich** (VRULL GmbH, RISC-V Board Treasurer and TSC Vice-Chair) spent a decade at TU Wien teaching software engineering, OS kernels, and researching runtime systems and compilers for HPC — including early AI/ML kernel work. TU Wien's Informatics and Electrical Engineering programs have computer architecture and compiler research directly aligned with RISC-V toolchain development. Tomsich presented matrix extension progress at RISC-V Europe 2025.
+
 ---
 
 ### Portugal
@@ -230,6 +235,20 @@ Present at RISC-V Europe 2023. Computer science and ECE programs with architectu
 
 ---
 
+### Albania *(Emerging — National Policy Initiative)*
+
+**University of Tirana — Tirana**
+Albania does not yet have documented RISC-V coursework, but it is the first Western Balkans country to articulate an explicit national strategy for RISC-V adoption at the EU summit level. **Kushtrim Shala** (Co-Founder, Digital Valley Albania / EDIH; Computing Sciences degree from University of Tirana) presented "Albania is an AI-Factory" at RISC-V Europe 2025 — outlining a strategy to embed RISC-V into Albanian CS and engineering education, establish a RISC-V-native AI compute facility, and transform the country's software outsourcing workforce into open-hardware architects.
+
+- Albania's ICT sector employs tens of thousands of engineers currently focused on software outsourcing — the proposed pivot toward RISC-V education is workforce-scale, not just academic
+- Digital Valley Albania is an officially recognized European Digital Innovation Hub (EDIH) under the Digital Europe Programme — giving this initiative EU structural backing
+- The University of Tirana is the natural anchor institution for any national RISC-V curriculum rollout
+- ALBICT (Albanian ICT Association) has supported 600+ youth projects and 75+ startups — the ecosystem infrastructure for curriculum change exists
+
+*Action item:* Engage Kushtrim Shala directly. Albania represents the earliest-stage but most strategically explicit RISC-V education initiative in the Western Balkans — exactly the greenfield profile worth tracking from inception.
+
+---
+
 ## European Context
 
 - **PULP Platform** (ETH Zurich / Bologna): The most prolific source of open-source RISC-V IP in Europe. CVA6, Ibex, and Snitch are used as teaching and research platforms at dozens of European universities.
@@ -237,6 +256,9 @@ Present at RISC-V Europe 2023. Computer science and ECE programs with architectu
 - **Horizon Europe projects**: FRACTAL, NimbleAI, METASAT, AERO, CROSSCON, Scale4Edge, and Vitamin-V all use RISC-V as a primary platform — creating a network of university participants across the continent.
 - **Scale4Edge** (Germany): National program scaling RISC-V for edge applications, involving TUM, RPTU, University of Bremen, and others.
 - **RISC-V Educator of the Year (2019)**: Awarded to Dr. Leonidas Kosmidis (BSC/UPC) — the strongest European signal of recognized academic RISC-V leadership.
+- **Matrix Extensions (2025)**: IME and VME converging on specification freeze, with a unified LLVM-MLIR lowering path in development. European institutions (ETH Zurich, VRULL/TU Wien, PULP partners) are active contributors — giving European academia a role in shaping the RISC-V AI/HPC ISA itself, not just implementing it.
+- **Physical AI direction (2025)**: Luca Benini's 2025 keynote signals ETH/Bologna's next research frontier — safety, reliability, and efficiency for autonomous systems on RISC-V. Expect Horizon Europe projects in this space to emerge from the BSC and ETH networks.
+- **Western Balkans opening**: Albania's RISC-V Education initiative (RISC-V Europe 2025) is the first explicit national-level RISC-V strategy in an EU accession country. Worth monitoring as a model for other emerging European economies.
 
 ---
 
