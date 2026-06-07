@@ -14,13 +14,11 @@
     --border: #e5e5e5;
     --hover: #efefef;
     --accent: #111111;
+    --tier1: #111111;
+    --tier2: #5a5a5a;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -32,7 +30,7 @@ body {
 header {
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255,255,255,0.75);
     backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
@@ -47,35 +45,11 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-weight: 600;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.logo span {
-    font-weight: 400;
-    color: var(--text-secondary);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    transition: 0.2s;
-    font-size: 0.95rem;
-}
-
-nav a:hover {
-    color: var(--text);
-}
+.logo { font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+.logo span { font-weight: 400; color: var(--text-secondary); }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { text-decoration: none; color: var(--text-secondary); transition: 0.2s; font-size: 0.95rem; }
+nav a:hover { color: var(--text); }
 
 .hero {
     max-width: 900px;
@@ -103,13 +77,8 @@ nav a:hover {
     letter-spacing: -0.03em;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 750px;
-}
+.hero p { font-size: 1.2rem; color: var(--text-secondary); max-width: 750px; }
 
-/* Page tabs */
 .page-tabs {
     max-width: 1200px;
     margin: 0 auto;
@@ -131,34 +100,30 @@ nav a:hover {
 }
 
 .page-tab:hover { color: var(--text); }
-
-.page-tab.active {
-    color: var(--text);
-    border-bottom-color: var(--accent);
-}
-
+.page-tab.active { color: var(--text); border-bottom-color: var(--accent); }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 
+/* Controls */
 .controls-container {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 2rem auto 1rem auto;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.85rem;
 }
 
-@media (min-width: 768px) {
-    .controls-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+.controls-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .search-bar {
-    width: 100%;
+    flex: 1;
+    min-width: 200px;
     max-width: 400px;
     padding: 0.75rem 1rem;
     border: 1px solid var(--border);
@@ -172,21 +137,53 @@ nav a:hover {
 
 .search-bar:focus { border-color: var(--text); }
 
-.filter-tags {
+/* View toggle */
+.view-toggle {
     display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.view-btn {
+    padding: 0.65rem 1.1rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: 0.2s;
+    user-select: none;
+}
+
+.view-btn:not(:last-child) { border-right: 1px solid var(--border); }
+.view-btn:hover { color: var(--text); background: var(--hover); }
+.view-btn.active { background: var(--accent); color: white; }
+
+.filter-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+
+.filter-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    white-space: nowrap;
 }
 
 .tag {
-    padding: 0.4rem 0.9rem;
+    padding: 0.35rem 0.85rem;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 8px;
-    font-size: 0.85rem;
+    font-size: 0.83rem;
     cursor: pointer;
     transition: 0.2s;
     user-select: none;
+    white-space: nowrap;
 }
 
 .tag:hover, .tag.active {
@@ -195,6 +192,16 @@ nav a:hover {
     border-color: var(--accent);
 }
 
+/* Stats bar */
+.stats-bar {
+    max-width: 1200px;
+    margin: 0 auto 1.25rem auto;
+    padding: 0 2rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Grid */
 .grid-section {
     max-width: 1200px;
     margin: 0 auto 4rem auto;
@@ -207,6 +214,36 @@ nav a:hover {
     gap: 1.5rem;
 }
 
+/* Country sections (By Country view) */
+.country-section { margin-bottom: 2.5rem; }
+
+.country-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0 0.75rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.country-flag { font-size: 1.5rem; line-height: 1; }
+
+.country-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.country-count {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.18rem 0.55rem;
+    background: rgba(0,0,0,0.07);
+    border-radius: 20px;
+    color: var(--text-secondary);
+}
+
+/* Cards */
 .card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -224,25 +261,73 @@ nav a:hover {
 }
 
 .card-content h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
     font-weight: 600;
     letter-spacing: -0.01em;
 }
 
+.card-content h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-content h3 a:hover { text-decoration: underline; }
+
 .card-content p {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
 }
 
 .card-meta {
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
 }
 
+.tier-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+}
+
+.tier-badge-1 { background: var(--tier1); color: white; }
+.tier-badge-2 { background: rgba(0,0,0,0.1); color: var(--tier2); }
+
+.country-badge {
+    font-size: 0.78rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(0,0,0,0.03);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-secondary);
+}
+
+.focus-tag {
+    font-size: 0.75rem;
+    padding: 0.18rem 0.5rem;
+    background: rgba(0,0,0,0.03);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-secondary);
+}
+
+.no-results {
+    text-align: center;
+    padding: 4rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+    display: none;
+}
+
+/* Projects tab */
 .category-badge {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -275,15 +360,6 @@ nav a:hover {
 }
 
 .card-link:hover { color: var(--text); }
-
-.no-results {
-    text-align: center;
-    padding: 4rem;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    grid-column: 1 / -1;
-    display: none;
-}
 
 footer {
     text-align: center;
@@ -328,193 +404,44 @@ footer a:hover { text-decoration: underline; }
     <!-- Universities tab -->
     <div id="tab-universities" class="tab-panel active">
         <div class="controls-container">
-            <input type="text" id="searchInput" class="search-bar" placeholder="Search institutions, courses, or labs...">
-            <div class="filter-tags">
-                <div class="tag active" data-filter="all">All Sectors</div>
-                <div class="tag" data-filter="pioneers">Pioneers</div>
-                <div class="tag" data-filter="hands-on">Hands-On &amp; RVfpga</div>
-                <div class="tag" data-filter="research">Specialized Research</div>
-                <div class="tag" data-filter="expanding">Expanding Ecosystem</div>
+            <div class="controls-row">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search institutions, research areas...">
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">All Schools</button>
+                    <button class="view-btn" data-view="country">By Country</button>
+                </div>
+            </div>
+            <div class="controls-row">
+                <span class="filter-label">Region</span>
+                <div class="filter-tags" id="regionFilters">
+                    <div class="tag active" data-region="all">All</div>
+                    <div class="tag" data-region="North America">North America</div>
+                    <div class="tag" data-region="Europe">Europe</div>
+                    <div class="tag" data-region="Asia">Asia</div>
+                    <div class="tag" data-region="Latin America">Latin America</div>
+                    <div class="tag" data-region="Southeast Asia">Southeast Asia</div>
+                </div>
+            </div>
+            <div class="controls-row">
+                <span class="filter-label">Tier</span>
+                <div class="filter-tags" id="tierFilters">
+                    <div class="tag active" data-tier="all">All</div>
+                    <div class="tag" data-tier="1">Tier 1 — Confirmed</div>
+                    <div class="tag" data-tier="2">Tier 2 — Active</div>
+                </div>
             </div>
         </div>
 
-        <div class="grid-section">
+        <div class="stats-bar" id="statsBar"></div>
+
+        <div class="grid-section" id="universitySection">
             <div class="features" id="universityGrid">
-
-                <div class="card" data-category="pioneers">
-                    <div class="card-content">
-                        <h3>UC Berkeley</h3>
-                        <p>Birthplace of RISC-V, continuously driving the core architecture evolution and open-hardware developer ecosystem.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-                </div>
-
-                <div class="card" data-category="pioneers">
-                    <div class="card-content">
-                        <h3>MIT</h3>
-                        <p>Integrating open-standard ISAs natively into computation structures frameworks and secure hardware vulnerability mitigation research.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-                </div>
-
-                <div class="card" data-category="pioneers">
-                    <div class="card-content">
-                        <h3>Stanford</h3>
-                        <p>Deep specialization in teaching modern digital system designs and low-level hardware/software compilation interfaces using RISC-V targets.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-                </div>
-
-                <div class="card" data-category="pioneers">
-                    <div class="card-content">
-                        <h3>Carnegie Mellon University</h3>
-                        <p>Applying rigorous RISC-V architectures to verified, high-assurance embedded systems and dependable processor safety design paradigms.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-                </div>
-
-                <div class="card" data-category="pioneers">
-                    <div class="card-content">
-                        <h3>UIUC</h3>
-                        <p>Computer Organization and Design courses utilize RISC-V pipelines directly for hands-on processor prototyping labs and RTL research variants.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-                </div>
-
-                <div class="card" data-category="pioneers">
-                    <div class="card-content">
-                        <h3>University of Pennsylvania</h3>
-                        <p>CIS 5710 students design custom RV32IM processor cores from scratch, building concrete execution boundaries bridging software layers to silicon.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-                </div>
-
-                <div class="card" data-category="hands-on">
-                    <div class="card-content">
-                        <h3>UNLV</h3>
-                        <p>Leading international champion of the practical RVfpga training initiatives, providing production architecture lab blueprints worldwide.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Hands-On &amp; RVfpga</span></div>
-                </div>
-
-                <div class="card" data-category="hands-on">
-                    <div class="card-content">
-                        <h3>Arizona State University</h3>
-                        <p>Establishing open execution architectures as an unyielding cornerstone of senior-level, FPGA-based complex system integration projects.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Hands-On &amp; RVfpga</span></div>
-                </div>
-
-                <div class="card" data-category="hands-on">
-                    <div class="card-content">
-                        <h3>University of Texas, Arlington</h3>
-                        <p>CSE 4372 cohorts synthesize, build, and dynamically test custom multi-stage RISC-V processor configurations deployed to target FPGA hardware.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Hands-On &amp; RVfpga</span></div>
-                </div>
-
-                <div class="card" data-category="hands-on">
-                    <div class="card-content">
-                        <h3>Portland State University</h3>
-                        <p>Official RISC-V International Academic Partner systematically advancing complex modern System-on-Chip (SoC) verification pedagogy.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Hands-On &amp; RVfpga</span></div>
-                </div>
-
-                <div class="card" data-category="hands-on">
-                    <div class="card-content">
-                        <h3>University of Michigan</h3>
-                        <p>EECS 470 system labs apply custom RISC-V targets to teach complex out-of-order execution CPU microarchitecture behaviors.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Hands-On &amp; RVfpga</span></div>
-                </div>
-
-                <div class="card" data-category="research">
-                    <div class="card-content">
-                        <h3>Rice University</h3>
-                        <p>The RVR Lab continuously innovates by implementing specialized RISC-V microcontrollers scalable up to multi-width vector computing cores.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-                </div>
-
-                <div class="card" data-category="research">
-                    <div class="card-content">
-                        <h3>University of Pittsburgh</h3>
-                        <p>Exploring high-performance computing design spaces while configuring fault-tolerant, resilient execution architectures inside open hardware frameworks.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-                </div>
-
-                <div class="card" data-category="research">
-                    <div class="card-content">
-                        <h3>Penn State</h3>
-                        <p>Integrating highly resilient RISC-V system variations directly into space-grade, radiation-hardened satellite computing configurations.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-                </div>
-
-                <div class="card" data-category="research">
-                    <div class="card-content">
-                        <h3>Purdue University</h3>
-                        <p>Embedding open hardware verification, modern system constraints, and systematic SoC methodologies directly within core engineering paths.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-                </div>
-
-                <div class="card" data-category="research">
-                    <div class="card-content">
-                        <h3>Georgia Tech</h3>
-                        <p>Pioneering modern research paradigms utilizing massive many-core clusters alongside custom RISC-V-centric domain AI hardware accelerators.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-                </div>
-
-                <div class="card" data-category="expanding">
-                    <div class="card-content">
-                        <h3>UC San Diego</h3>
-                        <p>Advancing contemporary hardware-security education and side-channel evaluation landscapes utilizing clear, deterministic RISC-V infrastructure blocks.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-                </div>
-
-                <div class="card" data-category="expanding">
-                    <div class="card-content">
-                        <h3>University of Washington</h3>
-                        <p>Leveraging open standards to teach modern high-density VLSI physical design layouts and advanced instruction pipeline optimizations.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-                </div>
-
-                <div class="card" data-category="expanding">
-                    <div class="card-content">
-                        <h3>Cornell University</h3>
-                        <p>CS 3410 provides an explicit technical environment teaching how modern system software interacts cleanly with underlying logic via custom RISC-V implementations.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-                </div>
-
-                <div class="card" data-category="expanding">
-                    <div class="card-content">
-                        <h3>Tufts University</h3>
-                        <p>Introducing foundational low-level assembly paradigms, compilation targets, and machine-level computing fundamentals over native RV32I structures.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-                </div>
-
-                <div class="card" data-category="expanding">
-                    <div class="card-content">
-                        <h3>UC Santa Cruz</h3>
-                        <p>Championing modern global open-source hardware engineering strategies entirely built around scalable RISC-V academic track specifications.</p>
-                    </div>
-                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-                </div>
-
-                <div class="no-results" id="noResults">No institutions match your current tracking filter criteria.</div>
+                <div class="no-results" id="noResults">No institutions match your current filters.</div>
             </div>
         </div>
     </div>
 
-    <!-- Student Projects tab — rendered from data/projects.json -->
+    <!-- Student Projects tab -->
     <div id="tab-student-projects" class="tab-panel">
         <div class="controls-container">
             <input type="text" id="projectSearchInput" class="search-bar" placeholder="Search projects, schools, or topics...">
@@ -541,7 +468,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Page tab switching ---
     const pageTabs = document.querySelectorAll('.page-tab');
     const tabPanels = document.querySelectorAll('.tab-panel');
-
     pageTabs.forEach(tab => {
         tab.addEventListener('click', () => {
             pageTabs.forEach(t => t.classList.remove('active'));
@@ -551,38 +477,235 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Universities filter ---
-    const searchInput = document.getElementById('searchInput');
-    const tags = document.querySelectorAll('.tag');
-    const uniCards = document.querySelectorAll('#universityGrid .card:not(.no-results)');
-    const noResults = document.getElementById('noResults');
-    let currentFilter = 'all';
-    let currentSearchTerm = '';
+    // --- Country flags ---
+    const countryFlags = {
+        'USA': '🇺🇸',
+        'China': '🇨🇳',
+        'India': '🇮🇳',
+        'Switzerland': '🇨🇭',
+        'Italy': '🇮🇹',
+        'Spain': '🇪🇸',
+        'UK': '🇬🇧',
+        'France': '🇫🇷',
+        'Germany': '🇩🇪',
+        'Brazil': '🇧🇷',
+        'Philippines': '🇵🇭',
+        'Sweden': '🇸🇪',
+        'Czech Republic': '🇨🇿',
+        'Netherlands': '🇳🇱',
+        'Portugal': '🇵🇹',
+        'Greece': '🇬🇷',
+        'Austria': '🇦🇹',
+        'Belgium': '🇧🇪',
+        'Mexico': '🇲🇽',
+        'Chile': '🇨🇱',
+        'Argentina': '🇦🇷',
+        'Colombia': '🇨🇴',
+    };
 
-    function filterUniversities() {
-        let visible = 0;
-        uniCards.forEach(card => {
-            const matchFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
-            const matchSearch = card.textContent.toLowerCase().includes(currentSearchTerm);
-            card.style.display = (matchFilter && matchSearch) ? 'flex' : 'none';
-            if (matchFilter && matchSearch) visible++;
-        });
-        noResults.style.display = visible === 0 ? 'block' : 'none';
+    // --- Universities: load from data/schools.json ---
+    let allSchools = [];
+    let currentView = 'grid';
+    let currentRegion = 'all';
+    let currentTier = 'all';
+    let currentSearch = '';
+
+    const universitySection = document.getElementById('universitySection');
+    const noResults = document.getElementById('noResults');
+    const statsBar = document.getElementById('statsBar');
+
+    function buildCard(school) {
+        const flag = countryFlags[school.country] || '';
+        const tierClass = `tier-badge-${school.tier_level}`;
+        const tierLabel = school.tier_level === 1 ? 'Tier 1' : `Tier ${school.tier_level}`;
+        const nameHtml = school.website
+            ? `<a href="${school.website}" target="_blank">${school.name}</a>`
+            : school.name;
+        const focusTags = (school.hardware_focus || []).slice(0, 3)
+            .map(f => `<span class="focus-tag">${f}</span>`).join('');
+        const countryPill = currentView === 'grid'
+            ? `<span class="country-badge">${flag} ${school.country}</span>`
+            : '';
+
+        return `
+            <div class="card-content">
+                <h3>${nameHtml}</h3>
+                <p>${school.description || ''}</p>
+            </div>
+            <div class="card-meta">
+                <span class="tier-badge ${tierClass}">${tierLabel}</span>
+                ${countryPill}
+                ${focusTags}
+            </div>
+        `;
     }
 
-    searchInput.addEventListener('input', e => {
-        currentSearchTerm = e.target.value.toLowerCase();
-        filterUniversities();
-    });
+    function filterSchools() {
+        return allSchools.filter(s => {
+            if (currentRegion !== 'all' && s.region !== currentRegion) return false;
+            if (currentTier !== 'all' && String(s.tier_level) !== currentTier) return false;
+            if (currentSearch) {
+                const haystack = [s.name, s.country, s.region, s.description, ...(s.hardware_focus || [])]
+                    .join(' ').toLowerCase();
+                if (!haystack.includes(currentSearch)) return false;
+            }
+            return true;
+        });
+    }
 
-    tags.forEach(tag => {
-        tag.addEventListener('click', () => {
-            tags.forEach(t => t.classList.remove('active'));
-            tag.classList.add('active');
-            currentFilter = tag.dataset.filter;
-            filterUniversities();
+    function renderGrid(schools) {
+        const grid = document.getElementById('universityGrid');
+        grid.innerHTML = '';
+        grid.appendChild(noResults);
+
+        if (schools.length === 0) {
+            noResults.style.display = 'block';
+            return;
+        }
+        noResults.style.display = 'none';
+
+        schools.forEach(school => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = buildCard(school);
+            grid.appendChild(card);
+        });
+    }
+
+    function renderByCountry(schools) {
+        universitySection.innerHTML = '';
+
+        if (schools.length === 0) {
+            const empty = document.createElement('div');
+            empty.className = 'grid-section';
+            empty.innerHTML = '<p style="padding:4rem;text-align:center;color:var(--text-secondary)">No institutions match your current filters.</p>';
+            universitySection.appendChild(empty);
+            return;
+        }
+
+        // Group by country
+        const byCountry = {};
+        schools.forEach(s => {
+            if (!byCountry[s.country]) byCountry[s.country] = [];
+            byCountry[s.country].push(s);
+        });
+
+        // Sort countries: T1 count desc, then name
+        const sortedCountries = Object.keys(byCountry).sort((a, b) => {
+            const t1a = byCountry[a].filter(s => s.tier_level === 1).length;
+            const t1b = byCountry[b].filter(s => s.tier_level === 1).length;
+            if (t1b !== t1a) return t1b - t1a;
+            return a.localeCompare(b);
+        });
+
+        sortedCountries.forEach(country => {
+            const countrySchools = byCountry[country].sort((a, b) => a.tier_level - b.tier_level || a.name.localeCompare(b.name));
+            const flag = countryFlags[country] || '';
+            const total = countrySchools.length;
+            const t1 = countrySchools.filter(s => s.tier_level === 1).length;
+            const countLabel = t1 > 0
+                ? `${total} institution${total !== 1 ? 's' : ''} · ${t1} Tier 1`
+                : `${total} institution${total !== 1 ? 's' : ''}`;
+
+            const section = document.createElement('div');
+            section.className = 'country-section';
+            section.innerHTML = `
+                <div class="country-header">
+                    <span class="country-flag">${flag}</span>
+                    <span class="country-name">${country}</span>
+                    <span class="country-count">${countLabel}</span>
+                </div>
+                <div class="features country-grid"></div>
+            `;
+
+            const grid = section.querySelector('.country-grid');
+            countrySchools.forEach(school => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = buildCard(school);
+                grid.appendChild(card);
+            });
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'grid-section';
+            wrapper.style.marginBottom = '0';
+            wrapper.appendChild(section);
+            universitySection.appendChild(wrapper);
+        });
+    }
+
+    function updateStats(schools) {
+        const countries = new Set(schools.map(s => s.country)).size;
+        const t1 = schools.filter(s => s.tier_level === 1).length;
+        statsBar.textContent = `Showing ${schools.length} institution${schools.length !== 1 ? 's' : ''} across ${countries} countr${countries !== 1 ? 'ies' : 'y'} · ${t1} Tier 1 confirmed`;
+    }
+
+    function renderAll() {
+        const filtered = filterSchools();
+        updateStats(filtered);
+
+        if (currentView === 'country') {
+            renderByCountry(filtered);
+        } else {
+            if (!document.getElementById('universityGrid')) {
+                universitySection.innerHTML = '<div class="features" id="universityGrid"></div>';
+                document.getElementById('universityGrid').appendChild(noResults);
+            }
+            renderGrid(filtered);
+        }
+    }
+
+    // View toggle
+    document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentView = btn.dataset.view;
+            if (currentView === 'grid') {
+                universitySection.innerHTML = '<div class="features" id="universityGrid"></div>';
+                document.getElementById('universityGrid').appendChild(noResults);
+            }
+            renderAll();
         });
     });
+
+    // Region filter
+    document.querySelectorAll('#regionFilters .tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+            document.querySelectorAll('#regionFilters .tag').forEach(t => t.classList.remove('active'));
+            tag.classList.add('active');
+            currentRegion = tag.dataset.region;
+            renderAll();
+        });
+    });
+
+    // Tier filter
+    document.querySelectorAll('#tierFilters .tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+            document.querySelectorAll('#tierFilters .tag').forEach(t => t.classList.remove('active'));
+            tag.classList.add('active');
+            currentTier = tag.dataset.tier;
+            renderAll();
+        });
+    });
+
+    // Search
+    document.getElementById('searchInput').addEventListener('input', e => {
+        currentSearch = e.target.value.toLowerCase().trim();
+        renderAll();
+    });
+
+    // Load schools
+    fetch('./data/schools.json')
+        .then(r => r.json())
+        .then(schools => {
+            allSchools = schools;
+            renderAll();
+        })
+        .catch(() => {
+            noResults.textContent = 'Could not load institutions data.';
+            noResults.style.display = 'block';
+        });
 
     // --- Student Projects: load from data/projects.json ---
     const projectGrid = document.getElementById('projectGrid');
