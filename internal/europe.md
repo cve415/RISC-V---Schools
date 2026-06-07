@@ -6,7 +6,7 @@
 
 Europe is one of the three global centers of RISC-V academic gravity alongside the United States and China. European RISC-V academia is distinguished by three structural advantages: the **PULP Platform** (ETH Zurich / University of Bologna), which has produced the most widely adopted open-source RISC-V cores globally (CVA6, Ibex, Snitch); the **European Processor Initiative (EPI)** and a dense network of Horizon Europe research projects that institutionalize RISC-V across national boundaries; and the **Barcelona Supercomputing Center**, which anchors Spain's and Europe's safety-critical RISC-V research.
 
-Primary sources: RISC-V Europe Summit 2023 poster session proceedings and RISC-V Europe Summit 2025 keynote/talk content — institutions whose researchers presented documented RISC-V work are treated as confirmed. Additional entries draw on known research program records.
+Primary sources: RISC-V Europe Summit 2023 poster session proceedings, RISC-V Europe Summit 2025 keynote/talk content, and RISC-V Europe Summit 2026 poster session — institutions whose researchers presented documented RISC-V work are treated as confirmed. Additional entries draw on known research program records.
 
 This document covers **Tier 1 and Tier 2** only. No speculative entries.
 
@@ -32,6 +32,11 @@ The European anchor of RISC-V academia and one of the most important RISC-V inst
 - Computer Architecture courses at ETH Zurich use RISC-V as the primary ISA
 - Multiple RISC-V Europe 2023 poster presenters affiliated: **Thomas Benz, Paul Scheffler, Marco Bertuletti** (all ETH Zurich / Luca Benini group)
 - **RISC-V Europe 2025 keynote:** Luca Benini delivered "RISC-V: Enabling Open Physical AI" — focusing on deep domain specialization for efficient, safe, and reliable Physical AI chips on RISC-V. Confirms ETH's continued leadership at the frontier of RISC-V research directions.
+- **RISC-V Europe 2026 tapeout milestone:** Philippe Sauter (ETH IIS) presented MLEM, the first Croc SoC tapeout, confirmed functional at 72 MHz @ 1.2V in IHP 130nm open PDK — and HyperCroc, extending Croc with HyperBus DRAM and DMA for accelerator workloads. Implementable in under one hour on a consumer workstation.
+- **2026 — Loom (Florian Zaruba, ETH):** Open-source toolchain that automatically transforms simulation-grade SystemVerilog into FPGA-synthesizable RTL, validated end-to-end on a Snitch RISC-V core on Xilinx Alveo U250. Closes the gap between simulation and FPGA emulation without proprietary tools.
+- **2026 — CAGE-V (Moritz Waser, ETH):** Novel confidential computing architecture supporting guest enclaves inside confidential VMs, with hardware extension to CVA6 and a security monitor, demonstrating minor performance impact.
+- **2026 — MAGIA-V (ETH / Bologna joint):** Open mesh-of-tiles accelerator template integrating Spatz RVV vector processor with RedMulE tensor engine — enabling concurrent vector + matrix operations.
+- **2026 — "RISC-V Silicon at Scale" (Yichao Zhang, ETH/Bologna):** PULP Platform has delivered multiple chips exceeding one billion transistors — made possible through open-source collaboration and RISC-V's openness.
 - Participant in European Processor Initiative (EPI) vector acceleration work
 
 ---
@@ -44,7 +49,9 @@ Co-originator of the PULP Platform with ETH Zurich. Prof. Luca Benini holds a du
 - Graduate computer architecture courses use RISC-V; student teams contribute to open-source PULP cores
 - RISC-V silicon tapeouts including GAP8 (GreenWaves Technologies, spun out of Bologna/EPFL research)
 - **Marco Fariselli** (MSc Bologna 2019 → GreenWaves Technologies → Luxottica embedded AI): his 2025 summit talk on RISC-V for smart glasses traces a direct career arc from Bologna's academic RISC-V program to production edge AI silicon — one of the clearest examples of Bologna's graduate-to-industry RISC-V pipeline
-- One of Europe's clearest examples of academic RISC-V research becoming commercial silicon; Luca Benini's 2025 keynote further confirms Bologna's co-anchoring role
+- **2026 — Astral (Yvan Tortorella, Bologna):** Fully open-source, highly parametric RISC-V heterogeneous SoC platform targeting reliable onboard AI for space computers — combining RISC-V cores with accelerators for the harsh space environment.
+- **2026 — 5G NTN Space (Marco Bertuletti, ETH/Bologna):** Evaluated end-to-end 5G NTN uplink/downlink on a single rv64gc core; identified RISC-V "V" vector extension as the key to bridging the 273x performance gap for real-time space communications — confirming the PULP group's push into space-grade vector SoCs.
+- One of Europe's clearest examples of academic RISC-V research becoming commercial silicon; Luca Benini's 2025 keynote and the 2026 papers further confirm Bologna's co-anchoring role
 
 ---
 
@@ -55,6 +62,9 @@ Europe's strongest RISC-V safety-critical research program. BSC's **CAOS group**
 - **NOEL-V**: BSC's open RISC-V processor (extending Gaisler's design) for safety-critical applications
 - Documented RISC-V poster presentations at RISC-V Europe 2023: **Marcel Sarraseca** (SafeLS lockstep NOEL-V), **Francisco Javier Fuentes** (SafeTI traffic injector), **Leonidas Kosmidis** (METASAT multicore RISC-V platform)
 - Active on Horizon Europe projects: FRACTAL, NimbleAI, METASAT, AERO
+- **2026 — PQC4eMRTD (Leonidas Kosmidis, BSC):** EC-funded CSA project standardizing post-quantum cryptography for European machine-readable travel documents (passports, national IDs) — RISC-V systems are the implementation target. Directly ties BSC's RISC-V security research to EU digital identity infrastructure.
+- **2026 — Sargantana HQC (Vito Cucinelli, BSC):** HQC (NIST's new KEM, March 2025) performance profiling on BSC's Sargantana RV64GBV core, using B and V extensions and RAVE profiling tool.
+- **2026 — Bicameral+ (Aitor Echevarría, BSC):** Enhanced vector-aware cache design separating vector/scalar partitions — 7x area reduction, 18x energy savings vs prior version, 1.59x average speedup over conventional cache.
 - UPC graduate students formally enrolled in RISC-V research tracks; Computer Architecture coursework uses RISC-V
 
 ---
@@ -79,6 +89,8 @@ Home to the **CHERI-RISC-V** project — one of the most consequential hardware 
 - Prof. Simon Moore's group leads the CHERI hardware work; Prof. Robert Watson leads the broader CHERI project
 - Computer Architecture courses in the Department of Computer Science and Technology use RISC-V
 - lowRISC CIC (affiliated with Cambridge) maintains Ibex and OpenTitan tooling
+- **2026 — RVY ratification infrastructure (Alexandre Joannou, Cambridge):** Cambridge has built the comprehensive validation platform for the CHERI RVY extension — formal golden model, directed-random fuzz testing via Sail, FPGA at scale for software development and performance evaluation. This infrastructure directly enabled convergence toward RVY ratification with high confidence.
+- **2026 — RV64Y Temporal Safety (Jonathan Woodruff, Cambridge):** Studies informing the temporal safety provisions in the frozen RV64Y spec — optimized CheriBSD revocation to reduce Spec2006 overhead by 12% and explored PTE encoding for generational capability dirty states. Cambridge is authoring the spec, not just implementing it.
 
 ---
 
@@ -90,6 +102,9 @@ Active RISC-V safety research program with documented publications and coursewor
 - Computer Engineering and Electronics courses use RISC-V
 - Participant in European projects targeting RISC-V automotive and space applications
 - Strong connections to the PULP ecosystem through Italian research networks
+- **2026 — PQC ISA extensions (Valeria Piscopo + Alessandra Dolmeta):** Three papers at RISC-V Europe 2026 — CIRCE (CROSS PQC signature via CV-X-IF, 2x speedup, Zynq FPGA), HORCRUX (modular PQC ISA extension for ML-KEM/ML-DSA/SLH-DSA/HQC, 65nm ASIC ~26.3 kGE, up to 99.5% energy savings), CHIMERA (ASCON AEAD+hash engine, up to 6x speedup). The most concentrated PQC ISA extension work at any European institution.
+- **2026 — Side-channel and fault injection (Stefano Di Carlo + Alessandro Savino):** Flush+Reload cache side-channel attack methodology for RISC-V on gem5 (establishing attack feasibility), and InjectV — a gem5-based fault injection framework using trace-guided candidate injection points, requiring 95.8% fewer injections than random exploration.
+- **2026 — ML-KEM 22nm ASIC (Stefano Di Matteo + Ivan Sarno):** Quantitative cost-benefit analysis of a dedicated ML-KEM hardware accelerator on CV32E40P — 139x speedup over software, only 6% total SoC area overhead at 22nm. One of the clearest silicon data points for PQC acceleration on RISC-V.
 
 ---
 
@@ -101,6 +116,10 @@ France's primary RISC-V research institution, spanning multiple laboratories wit
 - **CEA List (Paris-Saclay / Grenoble)**: 128-bit RISC-V simulation — **Eduardo Tomasi Ribeiro**; VPSim virtual prototyping for RISC-V HPC — **Ayoub Mouhagir**; security platform — **Caaliph Andriamisaina**
 - CEA participates in European Processor Initiative (EPI)
 - Graduate students from Mines Saint-Étienne, Paris-Saclay, and Grenoble Alpes co-supervised with CEA labs
+- **2026 — Flying V (César Fuguet, CEA):** ECC-hardened HPDcache (open-source L1 data cache for CVA6) with SECDED and background scrubber — 2.1% area overhead in 45nm. First step toward a fully open-source RISC-V aerospace processor with safety-grade memory subsystem.
+- **2026 — Fault-Tolerant CVA6 (Jérôme Quévremont, CEA):** Radiation-hardened CVA6 with DCLS, SEU detection, L1 cache ECC, Linux+Zephyr tested — being integrated into a new 18nm SoC for AI. CEA is actively moving open RISC-V into production silicon for space, aero, and automotive.
+- **2026 — ALPES (Emanuele Valea + Jérémie Pescatore, CEA):** Versatile SoC platform built around OpenHW CVA6 and CV32E40P — a pre-verified foundation for ASIC projects, supporting multiple Horizon Europe RISC-V research programs.
+- **2026 — ANSSI IPECC on CVA6:** French national cybersecurity agency ANSSI contributed IPECC, an open-source side-channel-resistant ECC accelerator, integrated into CVA6 SoC on Genesys 2 FPGA. ECDSA P-256 signature latency reduced from 1.13s to 180ms (6.3x); scales to 9.1x for P-521. CEA/ANSSI collaboration producing open security IP for European RISC-V platforms.
 
 ---
 
@@ -149,6 +168,8 @@ Joint research with CEA Leti; **Anthony Zgheib** PhD co-supervised here. Microel
 
 **EPFL — Lausanne**
 Joint work with TU Delft on RISC-V embedded systems (**Karan Pathak**, TU Delft/EPFL). **Jose A. Miranda Calero** (Carlos III Madrid / EPFL Embedded Systems Lab) conducted RISC-V reconfigurable computing research. EPFL feeds into the Grenoble/ETH RISC-V corridor.
+
+- **2026 — X-HEEP (Pasquale Davide Schiavone, EPFL):** Open-source RISC-V SoC platform explicitly designed to lower the barrier to chip design for research and education. Provides configurable, extensible infrastructure for rapid custom RISC-V SoC development. Schiavone explicitly frames X-HEEP as supporting "broader European initiatives to advance semiconductor capabilities and technological sovereignty." First silicon confirmed via the Croc/MLEM tapeout at IHP 130nm (ETH/EPFL joint flow). X-HEEP has already enabled multiple academic tapeouts and is the basis for HyperCroc and ISOLDE space projects.
 
 ---
 
@@ -231,7 +252,14 @@ Dr. Gerard Rauwerda (Technolution, PhD from University of Twente): SmallSat RISC
 ### Greece
 
 **University of Athens — Athens**
-Present at RISC-V Europe 2023. Computer science and ECE programs with architecture research.
+**Prof. Dimitris Gizopoulos** (Department of Informatics and Telecommunications) is Greece's most active RISC-V researcher and a Horizon Europe project partner.
+
+- Co-PI of the **Vitamin-V** Horizon Europe project (2023–2025): built a production-grade open-source RISC-V cloud ecosystem covering QEMU, gem5, FPGA emulation, OpenStack, Kubernetes, and Kata Containers — with commercial partners Semidynamics, ZeroPoint, and Virtual Open Systems.
+- **2026 — Cache Timing Vulnerability Score (CTVS) for RISC-V:** Gizopoulos's group (Vasileios Karakostas, Alexandros Ntyrkai) extended and ported the CTVS methodology to RISC-V, integrating it with gem5 to support RISC-V multicore simulation. Enables systematic early-stage security evaluation during processor design.
+- Computer science and ECE architecture research using RISC-V is now documented and Horizon-Europe-scale.
+
+**ICS-FORTH — Heraklion, Crete**
+**Manolis Marazakis** (ICS-FORTH, Foundation for Research and Technology Hellas) leads the **RISER Horizon Europe project** (January 2023–): first-generation all-European RISC-V cloud server and accelerator prototypes, building on EPI and EUPILOT processor IP. The RISER Microserver Platform integrates EPAC1.5 RISC-V vector processor into a standalone compute node with NVMe storage and 100 Gbps Ethernet. Targets Europe's open strategic autonomy in cloud infrastructure.
 
 ---
 
@@ -259,6 +287,11 @@ Albania does not yet have documented RISC-V coursework, but it is the first West
 - **Matrix Extensions (2025)**: IME and VME converging on specification freeze, with a unified LLVM-MLIR lowering path in development. European institutions (ETH Zurich, VRULL/TU Wien, PULP partners) are active contributors — giving European academia a role in shaping the RISC-V AI/HPC ISA itself, not just implementing it.
 - **Physical AI direction (2025)**: Luca Benini's 2025 keynote signals ETH/Bologna's next research frontier — safety, reliability, and efficiency for autonomous systems on RISC-V. Expect Horizon Europe projects in this space to emerge from the BSC and ETH networks.
 - **Western Balkans opening**: Albania's RISC-V Education initiative (RISC-V Europe 2025) is the first explicit national-level RISC-V strategy in an EU accession country. Worth monitoring as a model for other emerging European economies.
+- **CHERI/RVY ratification (2026):** Cambridge's 2026 papers reveal that the RVY ("CHERI") RISC-V extension specification is now frozen, with Cambridge having built the full validation infrastructure — formal golden model, fuzz testing, FPGA at scale. European institutions (Cambridge, lowRISC, TU Wien, Bao hypervisor) are central to CHERI's transition from research to ratified RISC-V standard.
+- **Vitamin-V completion (2025):** The Horizon Europe Vitamin-V project (UPC/BSC + Univ. Athens + PoliTo + Semidynamics + ZeroPoint + Virtual Open Systems) delivered a production-grade open-source RISC-V cloud ecosystem in 2025 — one of the most comprehensive European RISC-V software stack efforts, enabling RISC-V cloud deployments with OpenStack and Kubernetes.
+- **RISER European server platform:** ICS-FORTH-led Horizon Europe project targeting all-European RISC-V cloud server hardware with standalone compute nodes using EPI-derived RISC-V vector processors. The clearest European attempt at sovereign RISC-V cloud infrastructure.
+- **IHP 130nm open PDK as European silicon commons:** Germany's IHP Microelectronics institute (Frankfurt/Oder) provides a fully open 130nm process design kit used for European RISC-V tapeouts — Croc (ETH/EPFL), HyperCroc, croc SEU-tolerance (ETH). IHP is becoming the European equivalent of SkyWater 130nm for academic RISC-V silicon.
+- **PQC ISA extension wave (2026):** Seven or more RISC-V Europe 2026 papers propose or evaluate post-quantum cryptography ISA extensions (CIRCE, HORCRUX, CHIMERA, PQCUARK, HORCRUX, ACE, ML-KEM accelerators) — primarily from European institutions (PoliTo, BSC, CEA). Europe is positioned as the leading contributor to RISC-V PQC standardization, driven by EU regulation and the EC's post-quantum migration mandate.
 
 ---
 
