@@ -6,11 +6,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Birthplace of RISC-V. Home of the Rocket Chip and BOOM processors; Patterson and Waterman developed the ISA here.",
-    "hardware_focus": [
-      "Rocket Chip",
-      "BOOM Out-of-Order Core",
-      "FPGA Workbenches"
-    ],
+    "hardware_focus": ["Rocket Chip", "BOOM Out-of-Order Core", "FPGA Workbenches"],
     "website": "https://bar.eecs.berkeley.edu",
     "is_active_chapter": true
   },
@@ -21,10 +17,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Integrates RISC-V into computation structures and secure hardware research. Custom RTL via Bluespec.",
-    "hardware_focus": [
-      "Custom RTL / Bluespec Design",
-      "Hardware Security"
-    ],
+    "hardware_focus": ["Custom RTL / Bluespec Design", "Hardware Security"],
     "website": "https://www.csail.mit.edu",
     "is_active_chapter": false
   },
@@ -35,10 +28,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Deep specialization in digital system design and hardware/software interface coursework using RISC-V.",
-    "hardware_focus": [
-      "Software Emulation",
-      "Hardware/Software Interfaces"
-    ],
+    "hardware_focus": ["Software Emulation", "Hardware/Software Interfaces"],
     "website": "https://ee.stanford.edu",
     "is_active_chapter": false
   },
@@ -49,9 +39,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Rigorous RISC-V architectures applied to verified, high-assurance embedded and dependable processor design.",
-    "hardware_focus": [
-      "Verified & High-Assurance System Design"
-    ],
+    "hardware_focus": ["Verified & High-Assurance System Design"],
     "website": "https://www.ece.cmu.edu",
     "is_active_chapter": false
   },
@@ -62,10 +50,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Computer Organization and Design courses use RISC-V pipelines for hands-on processor prototyping and RTL labs.",
-    "hardware_focus": [
-      "Processor Labs",
-      "Research Prototypes"
-    ],
+    "hardware_focus": ["Processor Labs", "Research Prototypes"],
     "website": "https://ece.illinois.edu",
     "is_active_chapter": false
   },
@@ -76,10 +61,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "CIS 5710 students design custom RV32IM cores from scratch, bridging software layers to silicon.",
-    "hardware_focus": [
-      "Custom RV32IM Cores",
-      "Hardware + Software Bridging"
-    ],
+    "hardware_focus": ["Custom RV32IM Cores", "Hardware + Software Bridging"],
     "website": "https://www.cis.upenn.edu",
     "is_active_chapter": false
   },
@@ -90,10 +72,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "International champion of the RVfpga training initiative, providing architecture lab blueprints worldwide.",
-    "hardware_focus": [
-      "RVfpga Initiative",
-      "Architecture Labs"
-    ],
+    "hardware_focus": ["RVfpga Initiative", "Architecture Labs"],
     "website": "https://www.unlv.edu/ece",
     "is_active_chapter": false
   },
@@ -104,10 +83,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Open-standard ISAs as a cornerstone of senior-level FPGA-based system integration and secure microelectronics.",
-    "hardware_focus": [
-      "FPGA Workbenches",
-      "Secure Microelectronics Design"
-    ],
+    "hardware_focus": ["FPGA Workbenches", "Secure Microelectronics Design"],
     "website": "https://ecee.engineering.asu.edu",
     "is_active_chapter": false
   },
@@ -118,9 +94,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "CSE 4372 cohorts synthesize and test custom multi-stage RISC-V processors deployed to FPGA hardware.",
-    "hardware_focus": [
-      "Custom RISC-V on FPGA"
-    ],
+    "hardware_focus": ["Custom RISC-V on FPGA"],
     "website": "https://www.uta.edu/cse",
     "is_active_chapter": false
   },
@@ -131,10 +105,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Official RISC-V International Academic Partner advancing SoC verification pedagogy.",
-    "hardware_focus": [
-      "SoC Design",
-      "Hardware Verification"
-    ],
+    "hardware_focus": ["SoC Design", "Hardware Verification"],
     "website": "https://www.pdx.edu/computer-engineering",
     "is_active_chapter": false
   },
@@ -145,9 +116,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "EECS 470 labs teach out-of-order CPU microarchitecture with custom RISC-V processor design.",
-    "hardware_focus": [
-      "Out-of-Order CPU Design"
-    ],
+    "hardware_focus": ["Out-of-Order CPU Design"],
     "website": "https://eecs.engin.umich.edu",
     "is_active_chapter": false
   },
@@ -158,10 +127,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "RVR Lab implements specialized RISC-V microcontrollers scaling up to multi-width vector computing cores.",
-    "hardware_focus": [
-      "Silicon MCU Boards",
-      "Vector Extensions"
-    ],
+    "hardware_focus": ["Silicon MCU Boards", "Vector Extensions"],
     "website": "https://riscv.rice.edu",
     "is_active_chapter": true
   },
@@ -172,9 +138,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "High-performance computing design with fault-tolerant, resilient execution architectures in open hardware.",
-    "hardware_focus": [
-      "Resilient & High-Performance Systems"
-    ],
+    "hardware_focus": ["Resilient & High-Performance Systems"],
     "website": "https://www.engineering.pitt.edu/ece",
     "is_active_chapter": false
   },
@@ -185,9 +149,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Integrating resilient RISC-V variants into space-grade, radiation-hardened satellite computing.",
-    "hardware_focus": [
-      "Space-Grade & Radiation-Hardened Architectures"
-    ],
+    "hardware_focus": ["Space-Grade & Radiation-Hardened Architectures"],
     "website": "https://eecs.psu.edu",
     "is_active_chapter": false
   },
@@ -198,10 +160,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Open hardware verification, SoC methodologies, and modern system constraints embedded in core engineering.",
-    "hardware_focus": [
-      "SoC Design",
-      "Hardware Verification"
-    ],
+    "hardware_focus": ["SoC Design", "Hardware Verification"],
     "website": "https://engineering.purdue.edu/ECE",
     "is_active_chapter": false
   },
@@ -212,10 +171,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Pioneering many-core cluster research and custom RISC-V domain-specific AI hardware accelerators.",
-    "hardware_focus": [
-      "Many-Core Systems",
-      "AI Accelerator Research"
-    ],
+    "hardware_focus": ["Many-Core Systems", "AI Accelerator Research"],
     "website": "https://ece.gatech.edu",
     "is_active_chapter": false
   },
@@ -226,9 +182,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Hardware-security education and side-channel evaluation using RISC-V infrastructure.",
-    "hardware_focus": [
-      "Hardware-Security Education"
-    ],
+    "hardware_focus": ["Hardware-Security Education"],
     "website": "https://cse.ucsd.edu",
     "is_active_chapter": false
   },
@@ -239,10 +193,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "VLSI physical design and instruction pipeline optimization taught via open-standard ISA frameworks.",
-    "hardware_focus": [
-      "VLSI Design",
-      "Architecture Instruction"
-    ],
+    "hardware_focus": ["VLSI Design", "Architecture Instruction"],
     "website": "https://www.cs.washington.edu",
     "is_active_chapter": false
   },
@@ -253,9 +204,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "CS 3410 teaches system software interaction with hardware through custom RISC-V implementations.",
-    "hardware_focus": [
-      "Hardware/Software Interface"
-    ],
+    "hardware_focus": ["Hardware/Software Interface"],
     "website": "https://cs.cornell.edu",
     "is_active_chapter": false
   },
@@ -266,9 +215,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Foundational assembly, compilation targets, and machine-level computing fundamentals over native RV32I.",
-    "hardware_focus": [
-      "Machine-Level Computing (RV32I)"
-    ],
+    "hardware_focus": ["Machine-Level Computing (RV32I)"],
     "website": "https://cs.tufts.edu",
     "is_active_chapter": false
   },
@@ -279,9 +226,7 @@
     "region": "United States",
     "tier_level": 1,
     "description": "Champions open-source hardware engineering built around scalable RISC-V academic specifications.",
-    "hardware_focus": [
-      "Open-Source Hardware"
-    ],
+    "hardware_focus": ["Open-Source Hardware"],
     "website": "https://engineering.ucsc.edu",
     "is_active_chapter": false
   },
@@ -292,213 +237,18 @@
     "region": "United States",
     "tier_level": 2,
     "description": "ECE lab-based RISC-V coursework with embedded systems integration.",
-    "hardware_focus": [
-      "Software Emulation",
-      "Silicon MCU Boards"
-    ],
+    "hardware_focus": ["Software Emulation", "Silicon MCU Boards"],
     "website": "https://miamioh.edu",
     "is_active_chapter": false
   },
   {
-    "id": "ict-cas",
-    "name": "Institute of Computing Technology, Chinese Academy of Sciences (ICT/CAS)",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "Home of XiangShan \u2014 the highest-performance open-source RISC-V processor globally. 28nm and 14nm tapeouts completed.",
-    "hardware_focus": [
-      "XiangShan Out-of-Order Core",
-      "Custom RTL / ASIC Design"
-    ],
-    "website": "https://github.com/OpenXiangShan",
-    "is_active_chapter": false
-  },
-  {
-    "id": "zju",
-    "name": "Zhejiang University",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "Geographic anchor of China's RISC-V cluster. Joint research with Alibaba T-Head (XuanTie C906/C910 cores, Uncore PMU).",
-    "hardware_focus": [
-      "SoC Design",
-      "RISC-V Microarchitecture Research"
-    ],
-    "website": "https://www.zju.edu.cn",
-    "is_active_chapter": false
-  },
-  {
-    "id": "tsinghua",
-    "name": "Tsinghua University",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "China's top university. Patterson & Hennessy RISC-V Edition is the primary architecture textbook.",
-    "hardware_focus": [
-      "Processor Microarchitecture",
-      "Hardware Security",
-      "Compiler Backend"
-    ],
-    "website": "https://www.tsinghua.edu.cn",
-    "is_active_chapter": false
-  },
-  {
-    "id": "sjtu",
-    "name": "Shanghai Jiao Tong University",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "CS359 Computer Architecture and graduate courses use RISC-V. Active in national CPU design competitions.",
-    "hardware_focus": [
-      "RISC-V Accelerators",
-      "Vector Extensions",
-      "FPGA Prototyping"
-    ],
-    "website": "https://www.sjtu.edu.cn",
-    "is_active_chapter": false
-  },
-  {
-    "id": "pku",
-    "name": "Peking University",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "Adopted RISC-V as instructional ISA. Institute of Software contributes to open-source RISC-V toolchain development.",
-    "hardware_focus": [
-      "Processor Microarchitecture",
-      "Hardware Security",
-      "Toolchain Development"
-    ],
-    "website": "https://www.pku.edu.cn",
-    "is_active_chapter": false
-  },
-  {
-    "id": "ustc",
-    "name": "University of Science and Technology of China",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "RISC-V pipeline implementation exercises in Computer Organization courses. Winner of national CPU design competitions.",
-    "hardware_focus": [
-      "Reconfigurable Computing",
-      "Domain-Specific Accelerators"
-    ],
-    "website": "https://www.ustc.edu.cn",
-    "is_active_chapter": false
-  },
-  {
-    "id": "hust",
-    "name": "Huazhong University of Science and Technology",
-    "country": "China",
-    "region": "China",
-    "tier_level": 1,
-    "description": "Strong processor design culture. Participates in the \u4e00\u751f\u4e00\u82af (One Life One Chip) national RISC-V tapeout program.",
-    "hardware_focus": [
-      "RISC-V CPU Implementations",
-      "IoT Processors",
-      "Formal Verification"
-    ],
-    "website": "https://www.hust.edu.cn",
-    "is_active_chapter": false
-  },
-  {
-    "id": "iit-madras",
-    "name": "Indian Institute of Technology Madras",
-    "country": "India",
-    "region": "India",
-    "tier_level": 1,
-    "description": "Home of the SHAKTI processor program \u2014 multiple production RISC-V silicon tapeouts from a student/faculty team. Funded by MeitY.",
-    "hardware_focus": [
-      "SHAKTI Processor Ecosystem",
-      "FPGA Workbenches",
-      "ASIC Tapeouts"
-    ],
-    "website": "https://shakti.org.in",
-    "is_active_chapter": true
-  },
-  {
-    "id": "iit-bombay",
-    "name": "Indian Institute of Technology Bombay",
-    "country": "India",
-    "region": "India",
-    "tier_level": 1,
-    "description": "CS 683 Advanced Computer Architecture uses RISC-V. NPTEL contributions in computer architecture reach millions nationally.",
-    "hardware_focus": [
-      "RISC-V Microarchitecture",
-      "Memory Hierarchy Research"
-    ],
-    "website": "https://www.iitb.ac.in",
-    "is_active_chapter": false
-  },
-  {
-    "id": "iit-kanpur",
-    "name": "Indian Institute of Technology Kanpur",
-    "country": "India",
-    "region": "India",
-    "tier_level": 1,
-    "description": "One of the first IITs to formally adopt Patterson & Hennessy RISC-V Edition as the primary architecture textbook.",
-    "hardware_focus": [
-      "Processor Design",
-      "Compiler Backend Research"
-    ],
-    "website": "https://www.iitk.ac.in",
-    "is_active_chapter": false
-  },
-  {
-    "id": "iit-delhi",
-    "name": "Indian Institute of Technology Delhi",
-    "country": "India",
-    "region": "India",
-    "tier_level": 1,
-    "description": "COL216 and COL718 use RISC-V for pipeline design, hazard analysis, and lab assignments. Public course materials available.",
-    "hardware_focus": [
-      "Pipeline Design",
-      "Memory Systems"
-    ],
-    "website": "https://www.iitd.ac.in",
-    "is_active_chapter": false
-  },
-  {
-    "id": "iit-kharagpur",
-    "name": "Indian Institute of Technology Kharagpur",
-    "country": "India",
-    "region": "India",
-    "tier_level": 1,
-    "description": "Original IIT. NPTEL computer organization courses produced here use RISC-V and reach millions of students nationally.",
-    "hardware_focus": [
-      "NPTEL RISC-V Courses",
-      "VLSI & Processor Design"
-    ],
-    "website": "https://www.iitkgp.ac.in",
-    "is_active_chapter": false
-  },
-  {
-    "id": "iisc",
-    "name": "Indian Institute of Science",
-    "country": "India",
-    "region": "India",
-    "tier_level": 1,
-    "description": "India's premier research university. Graduate architecture courses use RISC-V. Hardware security and VLSI research output.",
-    "hardware_focus": [
-      "Hardware Security",
-      "VLSI Design",
-      "Processor Microarchitecture"
-    ],
-    "website": "https://www.iisc.ac.in",
-    "is_active_chapter": false
-  },
-  {
     "id": "eth-zurich",
-    "name": "ETH Z\u00fcrich",
+    "name": "ETH Zürich",
     "country": "Switzerland",
     "region": "Europe",
     "tier_level": 1,
-    "description": "Origin of PULP Platform: CVA6, Ibex, and Snitch. Luca Benini's IIS lab is Europe's anchor for open-source RISC-V silicon.",
-    "hardware_focus": [
-      "CVA6 / Ariane Core",
-      "Snitch Compute Clusters",
-      "Custom RTL / ASIC Design"
-    ],
+    "description": "Origin of PULP Platform: CVA6, Ibex, and Snitch. Luca Benini's IIS lab is Europe's anchor for open-source RISC-V silicon with multiple tapeouts including MLEM at IHP 130nm.",
+    "hardware_focus": ["CVA6 / Ariane Core", "Snitch Compute Clusters", "Custom RTL / ASIC Design"],
     "website": "https://ee.ethz.ch",
     "is_active_chapter": true
   },
@@ -508,12 +258,8 @@
     "country": "Italy",
     "region": "Europe",
     "tier_level": 1,
-    "description": "Co-originator of PULP Platform with ETH Zurich. PULP cluster architecture; graduate courses use RISC-V. GAP8 spun out of joint research.",
-    "hardware_focus": [
-      "PULP Multi-Core Cluster",
-      "Energy-Efficient RISC-V",
-      "ASIC Tapeouts"
-    ],
+    "description": "Co-originator of PULP Platform with ETH Zurich. PULP cluster architecture; graduate courses use RISC-V. GAP8 spun out of joint research. Active in space-grade and 5G NTN RISC-V research.",
+    "hardware_focus": ["PULP Multi-Core Cluster", "Energy-Efficient RISC-V", "ASIC Tapeouts"],
     "website": "https://www.unibo.it",
     "is_active_chapter": false
   },
@@ -523,12 +269,8 @@
     "country": "Spain",
     "region": "Europe",
     "tier_level": 1,
-    "description": "Europe's strongest RISC-V safety-critical program. Home of NOEL-V. Dr. Kosmidis holds RISC-V Educator of the Year (2019).",
-    "hardware_focus": [
-      "NOEL-V Processor",
-      "High-Performance Computing",
-      "Safety-Critical Systems"
-    ],
+    "description": "Europe's strongest RISC-V safety-critical program. Home of NOEL-V and Sargantana. Dr. Kosmidis holds RISC-V Educator of the Year (2019). Active in EU post-quantum cryptography standards.",
+    "hardware_focus": ["NOEL-V Processor", "High-Performance Computing", "Safety-Critical Systems"],
     "website": "https://www.bsc.es",
     "is_active_chapter": true
   },
@@ -538,12 +280,8 @@
     "country": "UK",
     "region": "Europe",
     "tier_level": 1,
-    "description": "Home of CHERI-RISC-V. Cambridge is actively defining and ratifying the RVY (CHERI) capability extension to the RISC-V ISA.",
-    "hardware_focus": [
-      "CHERI Capability Architecture",
-      "Hardware Security",
-      "Formal Verification"
-    ],
+    "description": "Home of CHERI-RISC-V. Cambridge is authoring and validating the RVY (CHERI) capability extension to the RISC-V ISA, with formal golden models and fuzz testing infrastructure.",
+    "hardware_focus": ["CHERI Capability Architecture", "Hardware Security", "Formal Verification"],
     "website": "https://www.cl.cam.ac.uk",
     "is_active_chapter": false
   },
@@ -554,10 +292,7 @@
     "region": "Europe",
     "tier_level": 1,
     "description": "Prof. Georg Sigl's group has produced three RISC-V ASICs for post-quantum cryptography in 65nm and GlobalFoundries 22nm.",
-    "hardware_focus": [
-      "Post-Quantum Cryptography ASICs",
-      "Security in Information Technology"
-    ],
+    "hardware_focus": ["Post-Quantum Cryptography ASICs", "Security in Information Technology"],
     "website": "https://www.tum.de",
     "is_active_chapter": false
   },
@@ -567,12 +302,8 @@
     "country": "Italy",
     "region": "Europe",
     "tier_level": 1,
-    "description": "Active safety and security research. Multiple 2026 papers on PQC ISA extensions, side-channel attacks, fault injection, and 22nm ML-KEM ASIC.",
-    "hardware_focus": [
-      "PQC ISA Extensions",
-      "Hardware Fault Tolerance",
-      "ASIC Design"
-    ],
+    "description": "Most concentrated PQC ISA extension work in Europe. Three papers at RISC-V Europe 2026 covering CIRCE, HORCRUX, and CHIMERA. ML-KEM 22nm ASIC delivering 139x speedup over software. Active fault injection and side-channel research.",
+    "hardware_focus": ["PQC ISA Extensions", "Hardware Fault Tolerance", "ASIC Design"],
     "website": "https://www.polito.it",
     "is_active_chapter": false
   },
@@ -582,13 +313,20 @@
     "country": "France",
     "region": "Europe",
     "tier_level": 1,
-    "description": "France's primary RISC-V research institution. Flying V radiation-hardened cache, fault-tolerant CVA6, and ANSSI ECC accelerator work.",
-    "hardware_focus": [
-      "Radiation-Hardened RISC-V",
-      "Aerospace Systems",
-      "Secure Boot"
-    ],
+    "description": "France's primary RISC-V research institution. Flying V radiation-hardened cache, fault-tolerant CVA6, ANSSI ECC accelerator, and ALPES SoC platform targeting AI, space, and automotive silicon.",
+    "hardware_focus": ["Radiation-Hardened RISC-V", "Aerospace Systems", "Secure Boot"],
     "website": "https://www.cea.fr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "epfl",
+    "name": "EPFL (École Polytechnique Fédérale de Lausanne)",
+    "country": "Switzerland",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Co-developer of X-HEEP, an open-source RISC-V SoC platform designed to lower the barrier to chip design for research and education. First silicon confirmed via Croc/MLEM tapeout at IHP 130nm. Joint research with ETH Zurich and European RISC-V institutions.",
+    "hardware_focus": ["X-HEEP SoC Platform", "Custom RTL / ASIC Design", "Open PDK Tapeouts"],
+    "website": "https://www.epfl.ch",
     "is_active_chapter": false
   },
   {
@@ -598,10 +336,7 @@
     "region": "Europe",
     "tier_level": 2,
     "description": "ECE research programs with RISC-V silicon emulation and embedded architecture coursework.",
-    "hardware_focus": [
-      "Software Emulation",
-      "Silicon MCU Boards"
-    ],
+    "hardware_focus": ["Software Emulation", "Silicon MCU Boards"],
     "website": "https://www.deib.polimi.it",
     "is_active_chapter": false
   },
@@ -612,10 +347,7 @@
     "region": "Europe",
     "tier_level": 2,
     "description": "Computer architecture research with RISC-V emulation and FPGA-based coursework.",
-    "hardware_focus": [
-      "Software Emulation",
-      "FPGA Workbenches"
-    ],
+    "hardware_focus": ["Software Emulation", "FPGA Workbenches"],
     "website": "https://www.chalmers.se",
     "is_active_chapter": false
   },
@@ -626,12 +358,702 @@
     "region": "Europe",
     "tier_level": 2,
     "description": "Faculty of Electrical Engineering architecture research with RISC-V emulation and embedded silicon projects.",
-    "hardware_focus": [
-      "Software Emulation",
-      "Silicon MCU Boards"
-    ],
+    "hardware_focus": ["Software Emulation", "Silicon MCU Boards"],
     "website": "https://fel.cvut.cz",
     "is_active_chapter": true
+  },
+  {
+    "id": "rptu-kaiserslautern",
+    "name": "RPTU Kaiserslautern-Landau",
+    "country": "Germany",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Prof. Wolfgang Kunz's EDA group published on transient-execution side-channel detection in out-of-order RISC-V cores (SonicBOOM). Participant in Scale4Edge national RISC-V edge computing program.",
+    "hardware_focus": ["Hardware Security", "Formal Verification", "EDA Research"],
+    "website": "https://www.rptu.de",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-bremen",
+    "name": "University of Bremen / DFKI",
+    "country": "Germany",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Muhammad Hassan (DFKI / University of Bremen) presented formal verification work on RISC-V at RISC-V Europe 2023. Prof. Rolf Drechsler's group has published on RISC-V verification and computer architecture.",
+    "hardware_focus": ["Formal Verification", "Hardware Reliability"],
+    "website": "https://www.uni-bremen.de",
+    "is_active_chapter": false
+  },
+  {
+    "id": "fz-julich",
+    "name": "Forschungszentrum Jülich",
+    "country": "Germany",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "HPC research center with RISC-V vector (RVV) work. Stepan Nassyr presented automated BLIS kernel generation for RISC-V RVV at RISC-V Europe 2023 as part of the EUPILOT HPC project.",
+    "hardware_focus": ["RISC-V Vector (RVV)", "HPC Research"],
+    "website": "https://www.fz-juelich.de",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ihp-microelectronics",
+    "name": "IHP Microelectronics (Leibniz Institute)",
+    "country": "Germany",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Junchao Chen and Li Lu presented two RISC-V papers at RISC-V Europe 2023 including the TETRISC resilient quad-core RISC-V SoC. Also operates the open IHP 130nm PDK used for European academic RISC-V tapeouts.",
+    "hardware_focus": ["Fault-Tolerant SoC", "Open PDK / Silicon Commons"],
+    "website": "https://www.ihp-microelectronics.com",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-rennes-irisa",
+    "name": "University of Rennes / IRISA / INRIA",
+    "country": "France",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Prof. Angeliki Kritikakou presented dual-core lockstep RISC-V using HLS for real-time safety-critical systems at RISC-V Europe 2023. Graduate computer architecture and embedded systems research.",
+    "hardware_focus": ["Safety-Critical Systems", "HLS Design", "Real-Time Architecture"],
+    "website": "https://www.irisa.fr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-bretagne-sud",
+    "name": "Université Bretagne Sud",
+    "country": "France",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "William Pensec (PhD) presented DIFT-protected RISC-V cores against fault injection attacks at RISC-V Europe 2023. Lab-STICC ARCAD team research in hardware security.",
+    "hardware_focus": ["Hardware Security", "Fault Injection Defense"],
+    "website": "https://www.univ-ubs.fr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "mines-saint-etienne",
+    "name": "Mines Saint-Étienne (IMT)",
+    "country": "France",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Joint research with CEA Leti on RISC-V security; PhD students co-supervised on trace encoder security topics. Microelectronics and computer science engineering programs with RISC-V security research.",
+    "hardware_focus": ["Hardware Security", "RISC-V Trace Security"],
+    "website": "https://www.mines-stetienne.fr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-grenoble-alpes",
+    "name": "Université Grenoble Alpes / TIMA Lab",
+    "country": "France",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Arthur Perais (TIMA Lab) conducts high-performance processor microarchitecture research targeting RISC-V. CEA/UGA joint research environment in Grenoble, a major European semiconductor hub.",
+    "hardware_focus": ["Processor Microarchitecture", "HPC Architecture"],
+    "website": "https://www.univ-grenoble-alpes.fr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ens-paris-saclay",
+    "name": "École Normale Supérieure Paris-Saclay",
+    "country": "France",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Graduate computer science research with RISC-V components. Presenter at RISC-V Europe 2023.",
+    "hardware_focus": ["Computer Architecture Research"],
+    "website": "https://ens-paris-saclay.fr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-manchester",
+    "name": "University of Manchester",
+    "country": "UK",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Juan Fumero (APT Research Group) presented TornadoVM hardware acceleration on RISC-V at RISC-V Europe 2023. Advanced Processor Technologies group has documented RISC-V work and participates in the AERO project.",
+    "hardware_focus": ["Hardware Acceleration", "RISC-V HPC", "JVM on RISC-V"],
+    "website": "https://www.manchester.ac.uk",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-edinburgh-epcc",
+    "name": "University of Edinburgh / EPCC",
+    "country": "UK",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Nick Brown (EPCC) presented HPC work on RISC-V at RISC-V Europe 2023. EPCC is the UK's leading HPC research center with RISC-V in emerging architecture evaluation.",
+    "hardware_focus": ["HPC Research", "Emerging Architecture Evaluation"],
+    "website": "https://www.epcc.ed.ac.uk",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-cantabria",
+    "name": "Universidad de Cantabria",
+    "country": "Spain",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Jaime Palacios (MSc) presented 'Towards a RISC-V Educational HW Lab' at RISC-V Europe 2023 — documenting active curriculum development for hardware-centric RISC-V courses in CS/Engineering degrees.",
+    "hardware_focus": ["RISC-V Educational Hardware Lab", "Curriculum Development"],
+    "website": "https://www.unican.es",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-sevilla-imse",
+    "name": "IMSE-CNM / Universidad de Sevilla",
+    "country": "Spain",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Luis Felipe Rojas Muñoz (PostDoc) presented Root-of-Trust components for RISC-V SoCs using RO-PUF/TRNG at RISC-V Europe 2023. Joint CSIC/Universidad de Sevilla hardware security research.",
+    "hardware_focus": ["Hardware Security", "Root of Trust", "PUF / TRNG"],
+    "website": "https://www.imse-cnm.csic.es",
+    "is_active_chapter": false
+  },
+  {
+    "id": "upv-valencia",
+    "name": "Universitat Politècnica de València",
+    "country": "Spain",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Enrique S. Quintana-Ortí (UPV) presented TinyML matrix multiplication on multicore RISC-V (GAP8) at RISC-V Europe 2023. Parallel Architectures Group active in RISC-V HPC and embedded computing.",
+    "hardware_focus": ["TinyML on RISC-V", "Multicore Embedded Systems", "HPC"],
+    "website": "https://www.upv.es",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-malaga",
+    "name": "Universidad de Málaga",
+    "country": "Spain",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Computer architecture research with RISC-V elements. Represented at RISC-V Europe 2023.",
+    "hardware_focus": ["Computer Architecture Research"],
+    "website": "https://www.uma.es",
+    "is_active_chapter": false
+  },
+  {
+    "id": "sapienza-rome",
+    "name": "Sapienza University of Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Marcello Barbirotta (PhD) presented Dynamic Triple Modular Redundancy on RISC-V microarchitecture at RISC-V Europe 2023. Hardware fault tolerance research group with RISC-V coursework integration.",
+    "hardware_focus": ["Hardware Fault Tolerance", "Triple Modular Redundancy"],
+    "website": "https://www.uniroma1.it",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-pisa",
+    "name": "University of Pisa",
+    "country": "Italy",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Daniele Rossi presented HW-SW Interface for RAS (Reliability, Availability, Serviceability) in RISC-V architectures at RISC-V Europe 2023. Digital systems and reliability research.",
+    "hardware_focus": ["Hardware Reliability (RAS)", "Digital Systems"],
+    "website": "https://www.unipi.it",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-torino",
+    "name": "University of Torino",
+    "country": "Italy",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Iacopo Colonnelli presented distributed workflow systems on RISC-V HPC platforms at RISC-V Europe 2023. CS department involvement in RISC-V HPC research.",
+    "hardware_focus": ["HPC Workflow Systems", "Distributed RISC-V Platforms"],
+    "website": "https://www.unito.it",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ku-leuven",
+    "name": "KU Leuven / imec-DistriNet",
+    "country": "Belgium",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Marton Bognar (imec-DistriNet) presented hardware security work on RISC-V at RISC-V Europe 2023. Prof. Frank Piessens's security group. imec's industrial connections create strong applied RISC-V exposure.",
+    "hardware_focus": ["Hardware Security", "Trusted Execution Environments"],
+    "website": "https://www.kuleuven.be",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-twente",
+    "name": "University of Twente",
+    "country": "Netherlands",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Gerard Rauwerda presented SmallSat RISC-V payload platform at RISC-V Europe 2023. ECE and CS programs have computer architecture research relevant to RISC-V, including space computing applications.",
+    "hardware_focus": ["SmallSat / Space Computing", "Embedded RISC-V"],
+    "website": "https://www.utwente.nl",
+    "is_active_chapter": false
+  },
+  {
+    "id": "jku-linz",
+    "name": "Johannes Kepler University Linz",
+    "country": "Austria",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Lucas Klemmer (JKU PhD) presented a DSL for visualizing RISC-V pipelines at RISC-V Europe 2023. Institute for Complex Systems research in RISC-V tooling, verification, and waveform analysis.",
+    "hardware_focus": ["RISC-V Tooling", "Pipeline Visualization", "Formal Verification"],
+    "website": "https://www.jku.at",
+    "is_active_chapter": false
+  },
+  {
+    "id": "tu-wien",
+    "name": "TU Wien (Vienna University of Technology)",
+    "country": "Austria",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Philipp Tomsich (VRULL GmbH / former TU Wien; RISC-V Board Treasurer and TSC Vice-Chair) has deep compiler and runtime systems expertise linked to this institution. TU Wien Informatics and ECE programs have computer architecture and compiler research aligned with RISC-V toolchain development.",
+    "hardware_focus": ["Compiler & Runtime Systems", "RISC-V Toolchain"],
+    "website": "https://www.tuwien.at",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-minho",
+    "name": "Universidade do Minho",
+    "country": "Portugal",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Prof. Sandro Pinto presented the CROSSCON IoT security stack with RISC-V at RISC-V Europe 2023. Centro ALGORITMI/LASI group has documented RISC-V embedded security research.",
+    "hardware_focus": ["IoT Security", "Embedded RISC-V", "CROSSCON Stack"],
+    "website": "https://www.uminho.pt",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-athens",
+    "name": "University of Athens",
+    "country": "Greece",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Prof. Dimitris Gizopoulos co-leads the Vitamin-V Horizon Europe project delivering a production-grade open-source RISC-V cloud ecosystem (OpenStack, Kubernetes, QEMU, gem5). His group extended Cache Timing Vulnerability Scoring to RISC-V.",
+    "hardware_focus": ["RISC-V Cloud Infrastructure", "Hardware Security", "gem5 Simulation"],
+    "website": "https://www.uoa.gr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ics-forth",
+    "name": "ICS-FORTH",
+    "country": "Greece",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Manolis Marazakis leads the RISER Horizon Europe project building first-generation all-European RISC-V cloud server and accelerator prototypes, integrating EPAC1.5 RISC-V vector processors into standalone compute nodes.",
+    "hardware_focus": ["RISC-V Cloud Servers", "Vector Processors", "European HPC Infrastructure"],
+    "website": "https://www.ics.forth.gr",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-tirana",
+    "name": "University of Tirana",
+    "country": "Albania",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "First Western Balkans institution with an explicit national strategy for RISC-V adoption. Kushtrim Shala (Digital Valley Albania / EU EDIH) presented Albania's RISC-V education strategy at RISC-V Europe 2025.",
+    "hardware_focus": ["CS Curriculum Development", "National RISC-V Strategy"],
+    "website": "https://www.unitir.edu.al",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ict-cas",
+    "name": "Institute of Computing Technology, Chinese Academy of Sciences (ICT/CAS)",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "Home of XiangShan — the highest-performance open-source RISC-V processor globally. 28nm and 14nm tapeouts completed. Origin of the 一生一芯 (One Life One Chip) national student tapeout program.",
+    "hardware_focus": ["XiangShan Out-of-Order Core", "Custom RTL / ASIC Design"],
+    "website": "https://github.com/OpenXiangShan",
+    "is_active_chapter": false
+  },
+  {
+    "id": "zju",
+    "name": "Zhejiang University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "Geographic anchor of China's RISC-V cluster. Joint research with Alibaba T-Head (XuanTie C906/C910 cores, Uncore PMU). 一生一芯 national tapeout program participant.",
+    "hardware_focus": ["SoC Design", "RISC-V Microarchitecture Research"],
+    "website": "https://www.zju.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "tsinghua",
+    "name": "Tsinghua University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "China's top university. Patterson & Hennessy RISC-V Edition is the primary architecture textbook. Faculty publish in processor microarchitecture, hardware security, and compiler backend research.",
+    "hardware_focus": ["Processor Microarchitecture", "Hardware Security", "Compiler Backend"],
+    "website": "https://www.tsinghua.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "sjtu",
+    "name": "Shanghai Jiao Tong University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "CS359 Computer Architecture and graduate courses use RISC-V. Active in national CPU design competitions. Research covers RISC-V accelerators, vector extensions, and FPGA prototyping.",
+    "hardware_focus": ["RISC-V Accelerators", "Vector Extensions", "FPGA Prototyping"],
+    "website": "https://www.sjtu.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "pku",
+    "name": "Peking University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "Adopted RISC-V as instructional ISA. Institute of Software contributes to open-source RISC-V toolchain development. Active in national CPU design competitions.",
+    "hardware_focus": ["Processor Microarchitecture", "Hardware Security", "Toolchain Development"],
+    "website": "https://www.pku.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ustc",
+    "name": "University of Science and Technology of China",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "RISC-V pipeline implementation in Computer Organization courses. Winner of national CPU design competitions. 一生一芯 program participant.",
+    "hardware_focus": ["Reconfigurable Computing", "Domain-Specific Accelerators"],
+    "website": "https://www.ustc.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "hust",
+    "name": "Huazhong University of Science and Technology",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "Strong processor design culture. Participates in the 一生一芯 (One Life One Chip) national RISC-V tapeout program. Public lab materials include RISC-V pipeline design exercises.",
+    "hardware_focus": ["RISC-V CPU Implementations", "IoT Processors", "Formal Verification"],
+    "website": "https://www.hust.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "seu-nanjing",
+    "name": "Southeast University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "School of Electronic Science and Engineering is one of China's strongest microelectronics programs. RISC-V processor design appears in digital IC design and computer architecture courses. Active in Nanjing's semiconductor design cluster.",
+    "hardware_focus": ["SoC Design", "VLSI Implementation", "Low-Power Embedded Cores"],
+    "website": "https://www.seu.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "nudt",
+    "name": "National University of Defense Technology",
+    "country": "China",
+    "region": "China",
+    "tier_level": 1,
+    "description": "China's premier military-academic institution. Graduate courses use RISC-V as a design target for high-performance and reliable computing. NUDT's influence on national computing standards gives its RISC-V research outsized policy relevance.",
+    "hardware_focus": ["High-Performance RISC-V", "Reliable Computing", "Custom ISA Extensions"],
+    "website": "https://www.nudt.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "fudan",
+    "name": "Fudan University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "School of Microelectronics is one of China's strongest IC design programs. RISC-V appears in graduate chip design coursework and student tapeout projects. Located in Shanghai's semiconductor design hub.",
+    "hardware_focus": ["IC Design", "RISC-V Tapeout Projects"],
+    "website": "https://www.fudan.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "nju",
+    "name": "Nanjing University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Department of Computer Science and Technology has adopted RISC-V in computer organization courses and participates in the 一生一芯 (One Life One Chip) national student tapeout program.",
+    "hardware_focus": ["RISC-V Processor Design", "Student Tapeout (一生一芯)"],
+    "website": "https://www.nju.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uestc",
+    "name": "University of Electronic Science and Technology of China",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "China's most electronics-specialized university. RISC-V appears in digital systems, computer architecture, and SoC design coursework. Located in Chengdu, a growing chip design hub in Southwest China.",
+    "hardware_focus": ["Digital Systems", "SoC Design", "Computer Architecture"],
+    "website": "https://www.uestc.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "hit-harbin",
+    "name": "Harbin Institute of Technology",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Top engineering university in Northeast China. School of Computer Science and Technology has computer architecture research referencing RISC-V; student teams participate in national RISC-V processor design competitions.",
+    "hardware_focus": ["Processor Design", "Computer Architecture"],
+    "website": "https://www.hit.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "buaa",
+    "name": "Beihang University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Aerospace and defense-oriented engineering university. Computer architecture and embedded systems courses reference RISC-V; faculty research in fault-tolerant and real-time systems aligns with RISC-V's open verification properties.",
+    "hardware_focus": ["Fault-Tolerant Systems", "Real-Time Embedded", "Aerospace Computing"],
+    "website": "https://www.buaa.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "xjtu",
+    "name": "Xi'an Jiaotong University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Strong ECE programs with computer architecture coursework that has adopted RISC-V edition materials. Research in energy-efficient computing references RISC-V implementations.",
+    "hardware_focus": ["Energy-Efficient Computing", "Processor Architecture"],
+    "website": "https://www.xjtu.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "sysu",
+    "name": "Sun Yat-sen University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Flagship university of South China. CS and ECE programs include computer architecture content with RISC-V. Located in the Pearl River Delta semiconductor region near Huawei headquarters in Shenzhen.",
+    "hardware_focus": ["Computer Architecture", "Embedded Systems"],
+    "website": "https://www.sysu.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "scut",
+    "name": "South China University of Technology",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Strong engineering programs in South China. ECE and CS architecture courses tracking the RISC-V textbook transition; faculty research in embedded IoT and SoC design references RISC-V.",
+    "hardware_focus": ["Embedded IoT", "SoC Design"],
+    "website": "https://www.scut.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "wuhan-u",
+    "name": "Wuhan University",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "CS and ECE programs with computer architecture coursework. Located alongside HUST, China's strongest RISC-V institution in Wuhan, creating cross-institutional RISC-V research influence.",
+    "hardware_focus": ["Computer Architecture", "Digital Systems"],
+    "website": "https://www.whu.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "bit-beijing",
+    "name": "Beijing Institute of Technology",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "Defense-adjacent engineering university with strong ECE programs. Computer architecture and embedded systems courses reference RISC-V; focus on safety-critical systems aligns with RISC-V's verifiable open ISA.",
+    "hardware_focus": ["Safety-Critical Systems", "Embedded Systems"],
+    "website": "https://www.bit.edu.cn",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iscas-plct",
+    "name": "ISCAS / PLCT Lab (Chinese Academy of Sciences)",
+    "country": "China",
+    "region": "China",
+    "tier_level": 2,
+    "description": "PLCT Lab (Programming Language and Compiler Technology) at Institute of Software, CAS is China's most important RISC-V toolchain contributor — maintaining and extending GCC, LLVM, QEMU, and open-source RISC-V tools nationally.",
+    "hardware_focus": ["RISC-V Toolchain (GCC / LLVM / QEMU)", "Compiler Development"],
+    "website": "https://plctlab.org",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-madras",
+    "name": "Indian Institute of Technology Madras",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "Home of the SHAKTI processor program — multiple production RISC-V silicon tapeouts from a student/faculty team. Funded by MeitY. NPTEL computer architecture courses use RISC-V and reach millions nationally.",
+    "hardware_focus": ["SHAKTI Processor Ecosystem", "FPGA Workbenches", "ASIC Tapeouts"],
+    "website": "https://shakti.org.in",
+    "is_active_chapter": true
+  },
+  {
+    "id": "iit-bombay",
+    "name": "Indian Institute of Technology Bombay",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "CS 683 Advanced Computer Architecture uses RISC-V. NPTEL contributions in computer architecture reach millions nationally.",
+    "hardware_focus": ["RISC-V Microarchitecture", "Memory Hierarchy Research"],
+    "website": "https://www.iitb.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-kanpur",
+    "name": "Indian Institute of Technology Kanpur",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "One of the first IITs to formally adopt Patterson & Hennessy RISC-V Edition as the primary architecture textbook. Research includes processor design and compiler backend work.",
+    "hardware_focus": ["Processor Design", "Compiler Backend Research"],
+    "website": "https://www.iitk.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-delhi",
+    "name": "Indian Institute of Technology Delhi",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "COL216 and COL718 use RISC-V for pipeline design, hazard analysis, and lab assignments. Public course materials available.",
+    "hardware_focus": ["Pipeline Design", "Memory Systems"],
+    "website": "https://www.iitd.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-kharagpur",
+    "name": "Indian Institute of Technology Kharagpur",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "Original IIT. NPTEL computer organization courses produced here use RISC-V and reach millions of students nationally.",
+    "hardware_focus": ["NPTEL RISC-V Courses", "VLSI & Processor Design"],
+    "website": "https://www.iitkgp.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iisc",
+    "name": "Indian Institute of Science",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "India's premier research university. Graduate architecture courses use RISC-V. Hardware security and VLSI research output with strong industry connections to Bangalore's semiconductor cluster.",
+    "hardware_focus": ["Hardware Security", "VLSI Design", "Processor Microarchitecture"],
+    "website": "https://www.iisc.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-hyderabad",
+    "name": "Indian Institute of Technology Hyderabad",
+    "country": "India",
+    "region": "India",
+    "tier_level": 1,
+    "description": "Active computer architecture research group with published RISC-V based accelerator and custom ISA extension work. Computer Architecture coursework uses RISC-V; faculty have contributed to open-source RISC-V toolchain work.",
+    "hardware_focus": ["RISC-V Accelerators", "Custom ISA Extensions", "Toolchain Development"],
+    "website": "https://www.iith.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-roorkee",
+    "name": "Indian Institute of Technology Roorkee",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "ECE and CS programs include computer architecture sequences that have moved toward RISC-V as the Patterson & Hennessy RISC-V edition became the standard IIT textbook. Faculty research in embedded systems and digital design.",
+    "hardware_focus": ["Processor Architecture", "Embedded Systems"],
+    "website": "https://www.iitr.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-bhu",
+    "name": "Indian Institute of Technology (BHU) Varanasi",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "Electronics Engineering department with computer architecture coursework tracking the national IIT curriculum alignment toward RISC-V. Research output in VLSI design supports adoption.",
+    "hardware_focus": ["VLSI Design", "Computer Architecture"],
+    "website": "https://www.iitbhu.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iit-guwahati",
+    "name": "Indian Institute of Technology Guwahati",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "CS and ECE programs at Northeast India's flagship technical institution. Computer architecture faculty have published in processor design; RISC-V integration follows IIT-wide textbook trends.",
+    "hardware_focus": ["Processor Design", "Computer Architecture"],
+    "website": "https://www.iitg.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iiit-hyderabad",
+    "name": "IIIT Hyderabad",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "Center for VLSI and Embedded Systems Technology (CVEST) has produced RISC-V related publications and student projects. Graduate architecture courses reference RISC-V implementations.",
+    "hardware_focus": ["VLSI Design", "Embedded Systems", "RISC-V Processor Projects"],
+    "website": "https://www.iiit.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "bits-pilani",
+    "name": "BITS Pilani",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "India's top private technical university. Strong undergraduate research culture has produced RISC-V processor implementations and FPGA projects documented on GitHub across the Pilani, Goa, and Hyderabad campuses.",
+    "hardware_focus": ["RISC-V FPGA Projects", "Processor Design"],
+    "website": "https://www.bits-pilani.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "nit-trichy",
+    "name": "NIT Tiruchirappalli",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "Consistently ranked the top NIT. ECE department computer architecture courses have adopted RISC-V edition textbooks; faculty research in embedded systems and VLSI supports active adoption.",
+    "hardware_focus": ["Embedded Systems", "VLSI Design"],
+    "website": "https://www.nitt.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "nit-calicut",
+    "name": "NIT Calicut",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "Strong ECE/CS programs in Kerala; computer architecture instruction has moved toward RISC-V. Kerala's active open-source technology culture reinforces adoption.",
+    "hardware_focus": ["Computer Architecture", "Open-Source Hardware"],
+    "website": "https://www.nitc.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "iiit-bangalore",
+    "name": "IIIT Bangalore",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "Research-focused IIIT with industry ties to Bangalore's chip design ecosystem. Graduate programs in VLSI, embedded systems, and computer architecture reference RISC-V; student capstone projects include RISC-V core implementations.",
+    "hardware_focus": ["VLSI Design", "Embedded Systems", "RISC-V Core Implementations"],
+    "website": "https://www.iiitb.ac.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "jadavpur-u",
+    "name": "Jadavpur University",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "One of India's oldest and most respected state engineering universities. ECE and CS departments have research groups in VLSI and digital design tracking RISC-V through national textbook shifts.",
+    "hardware_focus": ["VLSI Design", "Digital Systems"],
+    "website": "https://jadavpuruniversity.in",
+    "is_active_chapter": false
+  },
+  {
+    "id": "anna-university",
+    "name": "Anna University",
+    "country": "India",
+    "region": "India",
+    "tier_level": 2,
+    "description": "Apex technical university for Tamil Nadu, affiliating hundreds of engineering colleges. Given proximity to IIT Madras and the SHAKTI ecosystem, RISC-V exposure is documented through affiliated faculty collaboration.",
+    "hardware_focus": ["Computer Architecture", "Embedded Systems"],
+    "website": "https://www.annauniv.edu",
+    "is_active_chapter": false
   },
   {
     "id": "ufrgs",
@@ -639,12 +1061,8 @@
     "country": "Brazil",
     "region": "Latin America",
     "tier_level": 1,
-    "description": "Strongest documented RISC-V program in Latin America. GAPH group publishes RISC-V microarchitecture and NoC research.",
-    "hardware_focus": [
-      "RISC-V Microarchitecture",
-      "Network-on-Chip",
-      "FPGA Implementations"
-    ],
+    "description": "Strongest documented RISC-V program in Latin America. GAPH group publishes RISC-V microarchitecture and NoC research. Computer Architecture courses use RISC-V as the primary ISA reference.",
+    "hardware_focus": ["RISC-V Microarchitecture", "Network-on-Chip", "FPGA Implementations"],
     "website": "https://www.inf.ufrgs.br",
     "is_active_chapter": false
   },
@@ -654,40 +1072,218 @@
     "country": "Brazil",
     "region": "Latin America",
     "tier_level": 1,
-    "description": "Brazil's top research university for engineering. MC722 Computer Architecture uses RISC-V. Accelerator and memory hierarchy research.",
-    "hardware_focus": [
-      "RISC-V Accelerators",
-      "Memory Hierarchy Research"
-    ],
+    "description": "Brazil's top research university for engineering. MC722 Computer Architecture uses RISC-V. Accelerator and memory hierarchy research. Industry connections to Campinas semiconductor cluster.",
+    "hardware_focus": ["RISC-V Accelerators", "Memory Hierarchy Research"],
     "website": "https://www.unicamp.br",
     "is_active_chapter": false
   },
   {
     "id": "usp",
-    "name": "Universidade de S\u00e3o Paulo (USP)",
+    "name": "Universidade de São Paulo (USP)",
     "country": "Brazil",
     "region": "Latin America",
     "tier_level": 1,
-    "description": "Brazil's largest university. Escola Polit\u00e9cnica courses have adopted RISC-V. International RISC-V keynote presence (2025 Europe Summit).",
-    "hardware_focus": [
-      "Processor Design",
-      "Embedded Systems"
-    ],
+    "description": "Brazil's largest university. Escola Politécnica courses have adopted RISC-V. International RISC-V keynote presence at RISC-V Europe Summit 2025.",
+    "hardware_focus": ["Processor Design", "Embedded Systems"],
     "website": "https://www.usp.br",
     "is_active_chapter": false
   },
   {
     "id": "ita-brazil",
-    "name": "Instituto Tecnol\u00f3gico de Aeron\u00e1utica (ITA)",
+    "name": "Instituto Tecnológico de Aeronáutica (ITA)",
     "country": "Brazil",
     "region": "Latin America",
     "tier_level": 1,
-    "description": "Brazil's most selective engineering institution. RISC-V in safety-critical and aerospace embedded systems coursework.",
-    "hardware_focus": [
-      "Embedded & Safety-Critical Systems",
-      "Aerospace Computing"
-    ],
+    "description": "Brazil's most selective engineering institution. RISC-V in safety-critical and aerospace embedded systems coursework. Graduates enter Embraer, AEB (Brazilian Space Agency), and defense electronics.",
+    "hardware_focus": ["Embedded & Safety-Critical Systems", "Aerospace Computing"],
     "website": "https://www.ita.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ufmg",
+    "name": "Universidade Federal de Minas Gerais (UFMG)",
+    "country": "Brazil",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Department of Computer Science has research groups in computer architecture and embedded systems. RISC-V appears in graduate-level architecture coursework and student thesis projects.",
+    "hardware_focus": ["Computer Architecture", "Embedded Systems"],
+    "website": "https://www.ufmg.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ufrj-coppe",
+    "name": "Universidade Federal do Rio de Janeiro / COPPE",
+    "country": "Brazil",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "COPPE is Brazil's most prominent graduate engineering school. Processor architecture research has RISC-V-referenced publications; undergraduate architecture courses have tracked the MIPS-to-RISC-V textbook transition.",
+    "hardware_focus": ["Processor Architecture Research", "Systems Engineering"],
+    "website": "https://coppe.ufrj.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ufpe",
+    "name": "Universidade Federal de Pernambuco (UFPE)",
+    "country": "Brazil",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Centro de Informática (CIn) is one of Brazil's most research-active CS departments in embedded systems and hardware design. Faculty and student projects have produced RISC-V aligned work.",
+    "hardware_focus": ["Embedded Systems", "Hardware Design"],
+    "website": "https://www.cin.ufpe.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ufsc",
+    "name": "Universidade Federal de Santa Catarina (UFSC)",
+    "country": "Brazil",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Strong ECE and CS programs with embedded systems research. Computer architecture courses have adopted RISC-V edition textbooks; faculty in digital systems and SoC design have published relevant work.",
+    "hardware_focus": ["Embedded Systems", "SoC Design"],
+    "website": "https://www.ufsc.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "unb",
+    "name": "Universidade de Brasília (UnB)",
+    "country": "Brazil",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Federal capital university with CS and ECE programs. Computer architecture sequence has moved toward RISC-V; proximity to government ICT policy creates alignment with Brazil's semiconductor and open-hardware priorities.",
+    "hardware_focus": ["Computer Architecture", "Open-Hardware Policy Alignment"],
+    "website": "https://www.unb.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "unam",
+    "name": "Universidad Nacional Autónoma de México (UNAM)",
+    "country": "Mexico",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Latin America's largest university. Facultad de Ingeniería and IIMAS have computer architecture content with RISC-V appearing in graduate research and select advanced undergraduate courses.",
+    "hardware_focus": ["Computer Architecture Research", "Open-ISA Implementations"],
+    "website": "https://www.unam.mx",
+    "is_active_chapter": false
+  },
+  {
+    "id": "cinvestav",
+    "name": "CINVESTAV",
+    "country": "Mexico",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Mexico's premier public research and graduate institution. CS and Electrical Engineering departments have produced RISC-V and open-ISA research publications. CINVESTAV Guadalajara has documented embedded systems RISC-V output.",
+    "hardware_focus": ["Embedded Systems", "Digital Design", "RISC-V Research"],
+    "website": "https://www.cinvestav.mx",
+    "is_active_chapter": false
+  },
+  {
+    "id": "tec-monterrey",
+    "name": "Tecnológico de Monterrey (ITESM)",
+    "country": "Mexico",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Mexico's leading private technical university with nationwide campuses. Computer Engineering and CS programs have adopted RISC-V edition architecture textbooks; strong industry-connected lab culture supports FPGA-based RISC-V projects.",
+    "hardware_focus": ["FPGA Workbenches", "Architecture Labs"],
+    "website": "https://www.tec.mx",
+    "is_active_chapter": false
+  },
+  {
+    "id": "ipn-mexico",
+    "name": "Instituto Politécnico Nacional (IPN)",
+    "country": "Mexico",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Large public polytechnic with ESIME engineering schools across Mexico. Computer architecture sequences have tracked the MIPS-to-RISC-V transition; IPN's scale means adoption reaches a large engineering student population.",
+    "hardware_focus": ["Computer Architecture", "Engineering Education"],
+    "website": "https://www.ipn.mx",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-chile",
+    "name": "Universidad de Chile",
+    "country": "Chile",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Chile's top public university. Department of Computer Science (DCC) has computer architecture courses with RISC-V content. Faculty research includes processor design and systems programming referencing RISC-V.",
+    "hardware_focus": ["Processor Design", "Systems Programming"],
+    "website": "https://www.uchile.cl",
+    "is_active_chapter": false
+  },
+  {
+    "id": "puc-chile",
+    "name": "Pontificia Universidad Católica de Chile",
+    "country": "Chile",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Chile's highest-ranked university. Strong CS and ECE programs; computer organization and architecture courses have adopted RISC-V edition materials. Faculty research has produced relevant open-ISA output.",
+    "hardware_focus": ["Computer Organization", "Open-ISA Research"],
+    "website": "https://www.uc.cl",
+    "is_active_chapter": false
+  },
+  {
+    "id": "utfsm",
+    "name": "Universidad Técnica Federico Santa María",
+    "country": "Chile",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Chile's most engineering-focused university with a strong FPGA lab culture. RISC-V appears in digital systems, computer architecture, and capstone project contexts — a natural fit for hardware implementation courses.",
+    "hardware_focus": ["FPGA Workbenches", "Digital Systems", "Capstone Projects"],
+    "website": "https://www.usm.cl",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uniandes-colombia",
+    "name": "Universidad de los Andes",
+    "country": "Colombia",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Colombia's top-ranked private university. Electrical/Electronic and Systems/Computing Engineering departments have produced architecture-related research. Computer organization courses have moved toward RISC-V.",
+    "hardware_focus": ["Computer Architecture", "Embedded Systems"],
+    "website": "https://www.uniandes.edu.co",
+    "is_active_chapter": false
+  },
+  {
+    "id": "unal-colombia",
+    "name": "Universidad Nacional de Colombia",
+    "country": "Colombia",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Colombia's flagship public university. Engineering and CS programs at Bogotá and Medellín campuses include computer architecture sequences with RISC-V content in course materials and graduate research.",
+    "hardware_focus": ["Computer Architecture", "Graduate Research"],
+    "website": "https://unal.edu.co",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uba-argentina",
+    "name": "Universidad de Buenos Aires (UBA)",
+    "country": "Argentina",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Departamento de Computación within Exactas is Argentina's strongest CS department. Arquitectura del Computador courses have tracked the RISC-V textbook transition; faculty research in systems and architecture includes RISC-V references.",
+    "hardware_focus": ["Computer Architecture", "Systems Engineering"],
+    "website": "https://www.dc.uba.ar",
+    "is_active_chapter": false
+  },
+  {
+    "id": "unlp-argentina",
+    "name": "Universidad Nacional de La Plata (UNLP)",
+    "country": "Argentina",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Strong CS and engineering programs. Facultad de Informática has computer architecture content; research groups in digital systems and embedded computing have produced RISC-V aligned work at the graduate level.",
+    "hardware_focus": ["Digital Systems", "Embedded Computing"],
+    "website": "https://www.info.unlp.edu.ar",
+    "is_active_chapter": false
+  },
+  {
+    "id": "itba-argentina",
+    "name": "Instituto Tecnológico de Buenos Aires (ITBA)",
+    "country": "Argentina",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Argentina's most selective private technical university. Computer architecture courses use RISC-V; capstone project culture has produced student RISC-V processor implementations.",
+    "hardware_focus": ["Computer Architecture", "Student RISC-V Projects"],
+    "website": "https://www.itba.edu.ar",
     "is_active_chapter": false
   },
   {
@@ -696,12 +1292,53 @@
     "country": "Philippines",
     "region": "Philippines",
     "tier_level": 1,
-    "description": "Most likely Philippine institution with documented RISC-V exposure through architecture research and open-ISA coursework.",
-    "hardware_focus": [
-      "Computer Architecture",
-      "Open-ISA Coursework"
-    ],
+    "description": "Most likely Philippine institution with documented RISC-V exposure through architecture research and open-ISA coursework. Microelectronics and Microprocessors Lab with ECE and CS programs.",
+    "hardware_focus": ["Computer Architecture", "Open-ISA Coursework"],
     "website": "https://upd.edu.ph",
+    "is_active_chapter": false
+  },
+  {
+    "id": "dlsu",
+    "name": "De La Salle University",
+    "country": "Philippines",
+    "region": "Philippines",
+    "tier_level": 2,
+    "description": "Strong ECE and CS programs; embedded systems and computer organization courses make this a natural candidate for RISC-V integration. DLSU has industry-connected labs tracking open ISA trends.",
+    "hardware_focus": ["Embedded Systems", "Computer Organization"],
+    "website": "https://www.dlsu.edu.ph",
+    "is_active_chapter": false
+  },
+  {
+    "id": "mapua-university",
+    "name": "Mapúa University",
+    "country": "Philippines",
+    "region": "Philippines",
+    "tier_level": 2,
+    "description": "Engineering-focused institution with ECE and CE programs. Practical, lab-intensive culture aligns well with RISC-V FPGA integration and hands-on architecture coursework.",
+    "hardware_focus": ["FPGA Workbenches", "Embedded Systems"],
+    "website": "https://www.mapua.edu.ph",
+    "is_active_chapter": false
+  },
+  {
+    "id": "msu-iit",
+    "name": "Mindanao State University – Iligan Institute of Technology",
+    "country": "Philippines",
+    "region": "Philippines",
+    "tier_level": 2,
+    "description": "The strongest engineering school in Mindanao and the most likely Philippine regional institution to achieve Tier 1 status. ECE and CS programs are research-active; DOST-ERDT network membership accelerates open-ISA adoption.",
+    "hardware_focus": ["Computer Architecture", "Embedded Systems Research"],
+    "website": "https://www.msuiligan.edu.ph",
+    "is_active_chapter": false
+  },
+  {
+    "id": "usc-cebu",
+    "name": "University of San Carlos",
+    "country": "Philippines",
+    "region": "Philippines",
+    "tier_level": 2,
+    "description": "One of the oldest and most research-active private universities in the Visayas with strong ECE and CE programs. Research culture makes it a likely early adopter of RISC-V hardware instruction.",
+    "hardware_focus": ["ECE Research", "Computer Architecture"],
+    "website": "https://www.usc.edu.ph",
     "is_active_chapter": false
   }
 ]
