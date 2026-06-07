@@ -1,0 +1,58 @@
+[
+  {
+    "name": "BOOM — Berkeley Out-of-Order Machine",
+    "description": "Superscalar, out-of-order RISC-V processor written in Chisel. Originally a graduate research project, now widely used as a teaching platform for advanced microarchitecture study.",
+    "category": "Microarchitecture",
+    "school": "UC Berkeley",
+    "url": "https://github.com/riscv-boom/riscv-boom"
+  },
+  {
+    "name": "CVA6 (Ariane)",
+    "description": "64-bit, application-class RISC-V core capable of booting Linux. Developed at ETH Zürich's PULP Lab and now a widely adopted open-source reference for out-of-order execution research.",
+    "category": "Application Core",
+    "school": "ETH Zürich",
+    "url": "https://github.com/openhwgroup/cva6"
+  },
+  {
+    "name": "Ibex",
+    "description": "Small, 32-bit RISC-V microcontroller core (RV32IMC) for energy-constrained embedded systems. Originated from ETH Zürich's zero-riscy project, now maintained under lowRISC.",
+    "category": "Embedded / MCU",
+    "school": "ETH Zürich / lowRISC",
+    "url": "https://github.com/lowRISC/ibex"
+  },
+  {
+    "name": "SHAKTI Processor Family",
+    "description": "India's first indigenous RISC-V processor family, developed entirely by students and researchers at IIT Madras. Spans embedded C-class cores through high-performance E-class server designs.",
+    "category": "Processor Family",
+    "school": "IIT Madras",
+    "url": "https://shakti.org.in"
+  },
+  {
+    "name": "BRISC-V",
+    "description": "Modular, open-source RISC-V design space exploration platform built at Brown University. Supports single-cycle, multi-cycle, and pipelined core configurations for architecture coursework.",
+    "category": "Design Space Exploration",
+    "school": "Brown University",
+    "url": "https://github.com/yschiebelhut/BRISC-V"
+  },
+  {
+    "name": "OpenPiton + Ariane",
+    "description": "Many-core research platform integrating the Ariane RISC-V core into Princeton's OpenPiton framework, enabling scalable multi-core architecture research across dozens of tiles.",
+    "category": "Many-Core Research",
+    "school": "Princeton / ETH Zürich",
+    "url": "https://github.com/PrincetonUniversity/openpiton"
+  },
+  {
+    "name": "Rocket Chip Generator",
+    "description": "Parameterizable RISC-V SoC generator written in Chisel, originally produced by UC Berkeley students. Underpins much of the commercial and academic RISC-V ecosystem as a foundational reference design.",
+    "category": "SoC Generator",
+    "school": "UC Berkeley",
+    "url": "https://github.com/chipsalliance/rocket-chip"
+  },
+  {
+    "name": "XiangShan (香山)",
+    "description": "High-performance, open-source RISC-V processor developed by students at the Institute of Computing Technology, Chinese Academy of Sciences. Targets server-class performance with aggressive out-of-order pipelines.",
+    "category": "High-Performance",
+    "school": "ICT / CAS China",
+    "url": "https://github.com/OpenXiangShan/XiangShan"
+  }
+]
