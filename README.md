@@ -1,48 +1,94 @@
-**Compiled By:** Christopher Velasco, RISC-V International Academia & Training SIG member
+# RISC-V Global Academic Tracker
+
+An open-source directory mapping universities worldwide that have integrated RISC-V into core hardware engineering curricula, advanced processor research, or student-led silicon projects.
+
+**Live site:** _coming soon via GitHub Pages_
 
 ---
 
-## Overview
+## What This Is
 
-This repository maps the leading U.S. academic institutions integrating RISC-V into core engineering curricula and advanced research. These institutions are the primary feeders for the next generation of silicon architects and RTL engineers.
+Tracking RISC-V academic adoption globally is highly fragmented. This repository aggregates verified institutional data into a single, filterable resource — organized by region, tier, and hardware focus area.
 
----
+**Current coverage:** 50+ institutions across the United States, Europe, China, India, Latin America, and the Philippines.
 
-## US Pioneers
+Institutions are classified into two tiers:
 
-- **UC Berkeley** – Birthplace of RISC-V, driving the open-hardware ecosystem.
-- **MIT** – Bringing RISC-V into computation structures & secure hardware research.
-- **Stanford** – Teaching digital systems and hardware/software interfaces with RISC-V.
-- **Carnegie Mellon University** – Applying RISC-V to verified & high-assurance system design.
-- **University of Illinois Urbana-Champaign** – Computer Organization and Design courses use RISC-V for hands-on processor labs and research prototypes.
-- **University of Pennsylvania** – CIS 5710 students design custom RV32IM cores bridging hardware + software.
+| Tier | Criteria |
+|------|----------|
+| **Tier 1 — Confirmed** | Documented RISC-V coursework, published research, or silicon tapeout. Verifiable via syllabus, paper, or public repo. |
+| **Tier 2 — Active** | Known RISC-V activity; verification source pending or partial. |
 
 ---
 
-## Hands-On & RVfpga Movement
+## Repository Structure
 
-- **UNLV** – Leading the RVfpga initiative for practical architecture labs.
-- **Arizona State University** – Making RISC-V a cornerstone of FPGA-based system projects.
-- **University of Texas, Arlington** – CSE 4372 students build and test custom RISC-V processors on FPGA.
-- **Portland State** – Official RISC-V Academia Partner advancing SoC design.
-- **University of Michigan** – EECS 470 uses RISC-V for out-of-order CPU design.
-
----
-
-## Specialized Research & Innovation
-
-- **Rice** – RVR Lab building RISC-V microcontrollers to vector cores.
-- **Pittsburgh** – RISC-V in resilient & high-performance system design.
-- **Penn State** – Integrating RISC-V into space-grade & radiation-hardened architectures.
-- **Purdue** – Embedding RISC-V across SoC and verification courses.
-- **Georgia Tech** – Exploring many-core & AI accelerator research with RISC-V.
+```
+docs/               # GitHub Pages site (HTML + JSON datasets)
+  data/
+    schools.json    # Canonical institution dataset
+    projects.json   # Student and academic project registry
+internal/           # Working files and regional research notes (not served publicly)
+```
 
 ---
 
-## The Expanding Ecosystem
+## Data
 
-- **UC San Diego** – Advancing hardware-security education through RISC-V.
-- **University of Washington** – Using RISC-V in VLSI & architecture instruction.
-- **Cornell** – Teaching how software meets hardware via RISC-V (CS 3410).
-- **Tufts** – Introducing machine-level computing with RV32I.
-- **UC Santa Cruz** – Championing open-source hardware with a RISC-V-based curriculum.
+All institution data lives in [`docs/data/schools.json`](docs/data/schools.json). Each entry follows this schema:
+
+```json
+{
+  "id": "eth-zurich",
+  "name": "ETH Zürich",
+  "country": "Switzerland",
+  "region": "Europe",
+  "tier_level": 1,
+  "description": "...",
+  "hardware_focus": ["CVA6 / Ariane Core", "Snitch Compute Clusters"],
+  "website": "https://ee.ethz.ch",
+  "is_active_chapter": true
+}
+```
+
+Student and academic projects live in [`docs/data/projects.json`](docs/data/projects.json).
+
+---
+
+## How to Contribute
+
+Submissions welcome via GitHub Issues or Pull Requests.
+
+### Add a University
+Open an issue titled `[Add University] Institution Name` and include:
+- Institution name and country
+- Evidence of RISC-V integration (course name/number, syllabus URL, published paper, or public repo)
+- Primary hardware focus areas (e.g., FPGA prototyping, ASIC tapeout, embedded systems)
+- Official department or lab URL
+
+### Submit a Student Project
+Open an issue titled `[Add Project] Project Name` and include:
+- Project name and brief description
+- Affiliated institution
+- Public repository or publication URL
+- Category (e.g., Microarchitecture, Embedded/MCU, SoC Generator)
+
+### Update Existing Data
+If a tier classification, website, or description is outdated, open an issue or submit a PR directly against the relevant JSON file.
+
+---
+
+## Maintainer
+
+**Christopher Velasco** — RISC-V International Academia & Training SIG member  
+Compiled from primary sources including course catalogs, NPTEL, RISC-V Summit publications, and institutional research pages.
+
+---
+
+## License
+
+Source code (HTML, JavaScript): [MIT License](LICENSE)
+
+Dataset (`docs/data/schools.json`, `docs/data/projects.json`): [Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/) — free to use with attribution.
+
+RISC-V® is a registered trademark of RISC-V International. This repository is an independent community resource and is not affiliated with or endorsed by RISC-V International.
