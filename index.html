@@ -109,6 +109,46 @@ nav a:hover {
     max-width: 750px;
 }
 
+/* Page tabs */
+.page-tabs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+}
+
+.page-tab {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+    user-select: none;
+}
+
+.page-tab:hover {
+    color: var(--text);
+}
+
+.page-tab.active {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+}
+
+/* Tab panels */
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
 .controls-container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -219,6 +259,8 @@ nav a:hover {
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .category-badge {
@@ -230,6 +272,30 @@ nav a:hover {
     border-radius: 4px;
     color: var(--text-secondary);
     font-weight: 600;
+}
+
+.school-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(0,0,0,0.03);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-secondary);
+}
+
+.card-link {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.2s;
+}
+
+.card-link:hover {
+    color: var(--text);
 }
 
 .no-results {
@@ -277,229 +343,361 @@ footer a:hover {
         <div class="badge">RISC-V International Academia & Training SIG Initiative</div>
         <h1>Mapping the next generation of builders and architects.</h1>
         <p>
-            open-source directory tracking prominent university programs integrating 
+            open-source directory tracking prominent university programs integrating
             RISC-V into core hardware engineering curricula and advanced processor research.
         </p>
     </section>
 
-    <div class="controls-container">
-        <input type="text" id="searchInput" class="search-bar" placeholder="Search institutions, courses, or labs...">
-        
-        <div class="filter-tags">
-            <div class="tag active" data-filter="all">All Sectors</div>
-            <div class="tag" data-filter="pioneers">Pioneers</div>
-            <div class="tag" data-filter="hands-on">Hands-On & RVfpga</div>
-            <div class="tag" data-filter="research">Specialized Research</div>
-            <div class="tag" data-filter="expanding">Expanding Ecosystem</div>
+    <!-- Page-level tabs -->
+    <div class="page-tabs">
+        <div class="page-tab active" data-tab="universities">Universities</div>
+        <div class="page-tab" data-tab="student-projects">Student Projects</div>
+    </div>
+
+    <!-- Universities tab -->
+    <div id="tab-universities" class="tab-panel active">
+        <div class="controls-container">
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search institutions, courses, or labs...">
+
+            <div class="filter-tags">
+                <div class="tag active" data-filter="all">All Sectors</div>
+                <div class="tag" data-filter="pioneers">Pioneers</div>
+                <div class="tag" data-filter="hands-on">Hands-On & RVfpga</div>
+                <div class="tag" data-filter="research">Specialized Research</div>
+                <div class="tag" data-filter="expanding">Expanding Ecosystem</div>
+            </div>
+        </div>
+
+        <div class="grid-section">
+            <div class="features" id="universityGrid">
+
+                <!-- US Pioneers -->
+                <div class="card" data-category="pioneers">
+                    <div class="card-content">
+                        <h3>UC Berkeley</h3>
+                        <p>Birthplace of RISC-V, continuously driving the core architecture evolution and open-hardware developer ecosystem.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
+                </div>
+
+                <div class="card" data-category="pioneers">
+                    <div class="card-content">
+                        <h3>MIT</h3>
+                        <p>Integrating open-standard ISAs natively into computation structures frameworks and secure hardware vulnerability mitigation research.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
+                </div>
+
+                <div class="card" data-category="pioneers">
+                    <div class="card-content">
+                        <h3>Stanford</h3>
+                        <p>Deep specialization in teaching modern digital system designs and low-level hardware/software compilation interfaces using RISC-V targets.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
+                </div>
+
+                <div class="card" data-category="pioneers">
+                    <div class="card-content">
+                        <h3>Carnegie Mellon University</h3>
+                        <p>Applying rigorous RISC-V architectures to verified, high-assurance embedded systems and dependable processor safety design paradigms.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
+                </div>
+
+                <div class="card" data-category="pioneers">
+                    <div class="card-content">
+                        <h3>UIUC</h3>
+                        <p>Computer Organization and Design courses utilize RISC-V pipelines directly for hands-on processor prototyping labs and RTL research variants.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
+                </div>
+
+                <div class="card" data-category="pioneers">
+                    <div class="card-content">
+                        <h3>University of Pennsylvania</h3>
+                        <p>CIS 5710 students design custom RV32IM processor cores from scratch, building concrete execution boundaries bridging software layers to silicon.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Pioneer</span></div>
+                </div>
+
+                <!-- Hands-On & RVfpga Movement -->
+                <div class="card" data-category="hands-on">
+                    <div class="card-content">
+                        <h3>UNLV</h3>
+                        <p>Leading international champion of the practical RVfpga training initiatives, providing production architecture lab blueprints worldwide.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
+                </div>
+
+                <div class="card" data-category="hands-on">
+                    <div class="card-content">
+                        <h3>Arizona State University</h3>
+                        <p>Establishing open execution architectures as an unyielding cornerstone of senior-level, FPGA-based complex system integration projects.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
+                </div>
+
+                <div class="card" data-category="hands-on">
+                    <div class="card-content">
+                        <h3>University of Texas, Arlington</h3>
+                        <p>CSE 4372 cohorts synthesize, build, and dynamically test custom multi-stage RISC-V processor configurations deployed to target FPGA hardware.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
+                </div>
+
+                <div class="card" data-category="hands-on">
+                    <div class="card-content">
+                        <h3>Portland State University</h3>
+                        <p>Official RISC-V International Academic Partner systematically advancing complex modern System-on-Chip (SoC) verification pedagogy.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
+                </div>
+
+                <div class="card" data-category="hands-on">
+                    <div class="card-content">
+                        <h3>University of Michigan</h3>
+                        <p>EECS 470 system labs apply custom RISC-V targets to teach complex out-of-order execution CPU microarchitecture behaviors.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
+                </div>
+
+                <!-- Specialized Research & Innovation -->
+                <div class="card" data-category="research">
+                    <div class="card-content">
+                        <h3>Rice University</h3>
+                        <p>The RVR Lab continuously innovates by implementing specialized RISC-V microcontrollers scalable up to multi-width vector computing cores.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
+                </div>
+
+                <div class="card" data-category="research">
+                    <div class="card-content">
+                        <h3>University of Pittsburgh</h3>
+                        <p>Exploring high-performance computing design spaces while configuring fault-tolerant, resilient execution architectures inside open hardware frameworks.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
+                </div>
+
+                <div class="card" data-category="research">
+                    <div class="card-content">
+                        <h3>Penn State</h3>
+                        <p>Integrating highly resilient RISC-V system variations directly into space-grade, radiation-hardened satellite computing configurations.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
+                </div>
+
+                <div class="card" data-category="research">
+                    <div class="card-content">
+                        <h3>Purdue University</h3>
+                        <p>Embedding open hardware verification, modern system constraints, and systematic SoC methodologies directly within core engineering paths.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
+                </div>
+
+                <div class="card" data-category="research">
+                    <div class="card-content">
+                        <h3>Georgia Tech</h3>
+                        <p>Pioneering modern research paradigms utilizing massive many-core clusters alongside custom RISC-V-centric domain AI hardware accelerators.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
+                </div>
+
+                <!-- The Expanding Ecosystem -->
+                <div class="card" data-category="expanding">
+                    <div class="card-content">
+                        <h3>UC San Diego</h3>
+                        <p>Advancing contemporary hardware-security education and side-channel evaluation landscapes utilizing clear, deterministic RISC-V infrastructure blocks.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
+                </div>
+
+                <div class="card" data-category="expanding">
+                    <div class="card-content">
+                        <h3>University of Washington</h3>
+                        <p>Leveraging open standards to teach modern high-density VLSI physical design layouts and advanced instruction pipeline optimizations.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
+                </div>
+
+                <div class="card" data-category="expanding">
+                    <div class="card-content">
+                        <h3>Cornell University</h3>
+                        <p>CS 3410 provides an explicit technical environment teaching how modern system software interacts cleanly with underlying logic via custom RISC-V implementations.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
+                </div>
+
+                <div class="card" data-category="expanding">
+                    <div class="card-content">
+                        <h3>Tufts University</h3>
+                        <p>Introducing foundational low-level assembly paradigms, compilation targets, and machine-level computing fundamentals over native RV32I structures.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
+                </div>
+
+                <div class="card" data-category="expanding">
+                    <div class="card-content">
+                        <h3>UC Santa Cruz</h3>
+                        <p>Championing modern global open-source hardware engineering strategies entirely built around scalable RISC-V academic track specifications.</p>
+                    </div>
+                    <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults">No institutions match your current tracking filter criteria.</div>
+            </div>
         </div>
     </div>
 
-    <div class="grid-section">
-        <div class="features" id="universityGrid">
-            
-            <!-- US Pioneers -->
-            <div class="card" data-category="pioneers">
-                <div class="card-content">
-                    <h3>UC Berkeley</h3>
-                    <p>Birthplace of RISC-V, continuously driving the core architecture evolution and open-hardware developer ecosystem.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-            </div>
+    <!-- Student Projects tab -->
+    <div id="tab-student-projects" class="tab-panel">
+        <div class="controls-container">
+            <input type="text" id="projectSearchInput" class="search-bar" placeholder="Search projects, schools, or topics...">
+        </div>
 
-            <div class="card" data-category="pioneers">
-                <div class="card-content">
-                    <h3>MIT</h3>
-                    <p>Integrating open-standard ISAs natively into computation structures frameworks and secure hardware vulnerability mitigation research.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-            </div>
+        <div class="grid-section">
+            <div class="features" id="projectGrid">
 
-            <div class="card" data-category="pioneers">
-                <div class="card-content">
-                    <h3>Stanford</h3>
-                    <p>Deep specialization in teaching modern digital system designs and low-level hardware/software compilation interfaces using RISC-V targets.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>BOOM — Berkeley Out-of-Order Machine</h3>
+                        <p>Superscalar, out-of-order RISC-V processor written in Chisel. Originally a graduate research project, now widely used as a teaching platform for advanced microarchitecture study.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">Microarchitecture</span>
+                        <span class="school-badge">UC Berkeley</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/riscv-boom/riscv-boom" target="_blank">github.com/riscv-boom/riscv-boom &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-            </div>
 
-            <div class="card" data-category="pioneers">
-                <div class="card-content">
-                    <h3>Carnegie Mellon University</h3>
-                    <p>Applying rigorous RISC-V architectures to verified, high-assurance embedded systems and dependable processor safety design paradigms.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>CVA6 (Ariane)</h3>
+                        <p>64-bit, application-class RISC-V core capable of booting Linux. Developed at ETH Zürich's PULP Lab and now a widely adopted open-source reference for out-of-order execution research.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">Application Core</span>
+                        <span class="school-badge">ETH Zürich</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/openhwgroup/cva6" target="_blank">github.com/openhwgroup/cva6 &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-            </div>
 
-            <div class="card" data-category="pioneers">
-                <div class="card-content">
-                    <h3>UIUC</h3>
-                    <p>Computer Organization and Design courses utilize RISC-V pipelines directly for hands-on processor prototyping labs and RTL research variants.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>Ibex</h3>
+                        <p>Small, 32-bit RISC-V microcontroller core (RV32IMC) for energy-constrained embedded systems. Originated from ETH Zürich's zero-riscy project, now maintained under lowRISC.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">Embedded / MCU</span>
+                        <span class="school-badge">ETH Zürich / lowRISC</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/lowRISC/ibex" target="_blank">github.com/lowRISC/ibex &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-            </div>
 
-            <div class="card" data-category="pioneers">
-                <div class="card-content">
-                    <h3>University of Pennsylvania</h3>
-                    <p>CIS 5710 students design custom RV32IM processor cores from scratch, building concrete execution boundaries bridging software layers to silicon.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>SHAKTI Processor Family</h3>
+                        <p>India's first indigenous RISC-V processor family, developed entirely by students and researchers at IIT Madras. Spans embedded C-class cores through high-performance E-class server designs.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">Processor Family</span>
+                        <span class="school-badge">IIT Madras</span>
+                    </div>
+                    <a class="card-link" href="https://shakti.org.in" target="_blank">shakti.org.in &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Pioneer</span></div>
-            </div>
 
-            <!-- Hands-On & RVfpga Movement -->
-            <div class="card" data-category="hands-on">
-                <div class="card-content">
-                    <h3>UNLV</h3>
-                    <p>Leading international champion of the practical RVfpga training initiatives, providing production architecture lab blueprints worldwide.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>BRISC-V</h3>
+                        <p>Modular, open-source RISC-V design space exploration platform built at Brown University. Supports single-cycle, multi-cycle, and pipelined core configurations for architecture coursework.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">Design Space Exploration</span>
+                        <span class="school-badge">Brown University</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/yschiebelhut/BRISC-V" target="_blank">github.com/yschiebelhut/BRISC-V &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
-            </div>
 
-            <div class="card" data-category="hands-on">
-                <div class="card-content">
-                    <h3>Arizona State University</h3>
-                    <p>Establishing open execution architectures as an unyielding cornerstone of senior-level, FPGA-based complex system integration projects.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>OpenPiton + Ariane</h3>
+                        <p>Many-core research platform integrating the Ariane RISC-V core into Princeton's OpenPiton framework, enabling scalable multi-core architecture research across dozens of tiles.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">Many-Core Research</span>
+                        <span class="school-badge">Princeton / ETH Zürich</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/PrincetonUniversity/openpiton" target="_blank">github.com/PrincetonUniversity/openpiton &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
-            </div>
 
-            <div class="card" data-category="hands-on">
-                <div class="card-content">
-                    <h3>University of Texas, Arlington</h3>
-                    <p>CSE 4372 cohorts synthesize, build, and dynamically test custom multi-stage RISC-V processor configurations deployed to target FPGA hardware.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>Rocket Chip Generator</h3>
+                        <p>Parameterizable RISC-V SoC generator written in Chisel, originally produced by UC Berkeley students. Underpins much of the commercial and academic RISC-V ecosystem as a foundational reference design.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">SoC Generator</span>
+                        <span class="school-badge">UC Berkeley</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/chipsalliance/rocket-chip" target="_blank">github.com/chipsalliance/rocket-chip &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
-            </div>
 
-            <div class="card" data-category="hands-on">
-                <div class="card-content">
-                    <h3>Portland State University</h3>
-                    <p>Official RISC-V International Academic Partner systematically advancing complex modern System-on-Chip (SoC) verification pedagogy.</p>
+                <div class="card" data-project>
+                    <div class="card-content">
+                        <h3>XiangShan (香山)</h3>
+                        <p>High-performance, open-source RISC-V processor developed by students at the Institute of Computing Technology, Chinese Academy of Sciences. Targets server-class performance with aggressive out-of-order pipelines.</p>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-badge">High-Performance</span>
+                        <span class="school-badge">ICT / CAS China</span>
+                    </div>
+                    <a class="card-link" href="https://github.com/OpenXiangShan/XiangShan" target="_blank">github.com/OpenXiangShan/XiangShan &#x2197;</a>
                 </div>
-                <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
-            </div>
 
-            <div class="card" data-category="hands-on">
-                <div class="card-content">
-                    <h3>University of Michigan</h3>
-                    <p>EECS 470 system labs apply custom RISC-V targets to teach complex out-of-order execution CPU microarchitecture behaviors.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Hands-On & RVfpga</span></div>
+                <!-- No Results Message -->
+                <div class="no-results" id="noProjectResults">No projects match your search.</div>
             </div>
-
-            <!-- Specialized Research & Innovation -->
-            <div class="card" data-category="research">
-                <div class="card-content">
-                    <h3>Rice University</h3>
-                    <p>The RVR Lab continuously innovates by implementing specialized RISC-V microcontrollers scalable up to multi-width vector computing cores.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-            </div>
-
-            <div class="card" data-category="research">
-                <div class="card-content">
-                    <h3>University of Pittsburgh</h3>
-                    <p>Exploring high-performance computing design spaces while configuring fault-tolerant, resilient execution architectures inside open hardware frameworks.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-            </div>
-
-            <div class="card" data-category="research">
-                <div class="card-content">
-                    <h3>Penn State</h3>
-                    <p>Integrating highly resilient RISC-V system variations directly into space-grade, radiation-hardened satellite computing configurations.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-            </div>
-
-            <div class="card" data-category="research">
-                <div class="card-content">
-                    <h3>Purdue University</h3>
-                    <p>Embedding open hardware verification, modern system constraints, and systematic SoC methodologies directly within core engineering paths.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-            </div>
-
-            <div class="card" data-category="research">
-                <div class="card-content">
-                    <h3>Georgia Tech</h3>
-                    <p>Pioneering modern research paradigms utilizing massive many-core clusters alongside custom RISC-V-centric domain AI hardware accelerators.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Specialized Research</span></div>
-            </div>
-
-            <!-- The Expanding Ecosystem -->
-            <div class="card" data-category="expanding">
-                <div class="card-content">
-                    <h3>UC San Diego</h3>
-                    <p>Advancing contemporary hardware-security education and side-channel evaluation landscapes utilizing clear, deterministic RISC-V infrastructure blocks.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-            </div>
-
-            <div class="card" data-category="expanding">
-                <div class="card-content">
-                    <h3>University of Washington</h3>
-                    <p>Leveraging open standards to teach modern high-density VLSI physical design layouts and advanced instruction pipeline optimizations.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-            </div>
-
-            <div class="card" data-category="expanding">
-                <div class="card-content">
-                    <h3>Cornell University</h3>
-                    <p>CS 3410 provides an explicit technical environment teaching how modern system software interacts cleanly with underlying logic via custom RISC-V implementations.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-            </div>
-
-            <div class="card" data-category="expanding">
-                <div class="card-content">
-                    <h3>Tufts University</h3>
-                    <p>Introducing foundational low-level assembly paradigms, compilation targets, and machine-level computing fundamentals over native RV32I structures.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-            </div>
-
-            <div class="card" data-category="expanding">
-                <div class="card-content">
-                    <h3>UC Santa Cruz</h3>
-                    <p>Championing modern global open-source hardware engineering strategies entirely built around scalable RISC-V academic track specifications.</p>
-                </div>
-                <div class="card-meta"><span class="category-badge">Expanding Ecosystem</span></div>
-            </div>
-
-            <!-- Global No Results Message -->
-            <div class="no-results" id="noResults">No institutions match your current tracking filter criteria.</div>
         </div>
     </div>
 </main>
 
 <footer>
-    <p>Compiled by <strong>Christopher Velasco</strong> • Active Member, RISC-V International Academia & Training SIG</p>
+    <p>Compiled by <strong>Christopher Velasco</strong> &bull; Active Member, RISC-V International Academia &amp; Training SIG</p>
     <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-secondary);">Want to add your program? Submit an issue or PR via the <a href="https://github.com/cve415/RISC-V---Schools" target="_blank" style="text-decoration: underline;">GitHub Repository</a>.</p>
 </footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Page tab switching ---
+    const pageTabs = document.querySelectorAll('.page-tab');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    pageTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            pageTabs.forEach(t => t.classList.remove('active'));
+            tabPanels.forEach(p => p.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+        });
+    });
+
+    // --- Universities filter ---
     const searchInput = document.getElementById('searchInput');
     const tags = document.querySelectorAll('.tag');
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('#universityGrid .card:not(.no-results)');
     const noResults = document.getElementById('noResults');
-    
+
     let currentFilter = 'all';
     let currentSearchTerm = '';
 
     function filterDashboard() {
         let visibleCount = 0;
-
         cards.forEach(card => {
             const category = card.getAttribute('data-category');
             const cardText = card.textContent.toLowerCase();
-            
             const matchesFilter = (currentFilter === 'all' || category === currentFilter);
             const matchesSearch = cardText.includes(currentSearchTerm);
-
             if (matchesFilter && matchesSearch) {
                 card.style.display = 'flex';
                 visibleCount++;
@@ -507,29 +705,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.style.display = 'none';
             }
         });
-
-        if (visibleCount === 0) {
-            noResults.style.display = 'block';
-        } else {
-            noResults.style.display = 'none';
-        }
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
     }
 
-    // Input monitoring for realtime filtering
     searchInput.addEventListener('input', (e) => {
         currentSearchTerm = e.target.value.toLowerCase();
         filterDashboard();
     });
 
-    // Sector category filtering triggers
     tags.forEach(tag => {
         tag.addEventListener('click', () => {
             tags.forEach(t => t.classList.remove('active'));
             tag.classList.add('active');
-            
             currentFilter = tag.getAttribute('data-filter');
             filterDashboard();
         });
+    });
+
+    // --- Student Projects search ---
+    const projectSearchInput = document.getElementById('projectSearchInput');
+    const projectCards = document.querySelectorAll('#projectGrid .card[data-project]');
+    const noProjectResults = document.getElementById('noProjectResults');
+
+    projectSearchInput.addEventListener('input', (e) => {
+        const term = e.target.value.toLowerCase();
+        let visible = 0;
+        projectCards.forEach(card => {
+            const match = card.textContent.toLowerCase().includes(term);
+            card.style.display = match ? 'flex' : 'none';
+            if (match) visible++;
+        });
+        noProjectResults.style.display = visible === 0 ? 'block' : 'none';
     });
 });
 </script>
