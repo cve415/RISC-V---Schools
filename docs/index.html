@@ -22,8 +22,6 @@
     --border: #e5e5e5;
     --hover: #efefef;
     --accent: #111111;
-    --tier1: #111111;
-    --tier2: #5a5a5a;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -307,18 +305,6 @@ nav a:hover { color: var(--text); }
     flex-wrap: wrap;
 }
 
-.tier-badge {
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 0.2rem 0.55rem;
-    border-radius: 4px;
-}
-
-.tier-badge-1 { background: var(--tier1); color: white; }
-.tier-badge-2 { background: rgba(0,0,0,0.1); color: var(--tier2); }
-
 .country-badge {
     font-size: 0.78rem;
     padding: 0.2rem 0.5rem;
@@ -455,14 +441,6 @@ footer a:hover { text-decoration: underline; }
                     <div class="tag" data-region="Southeast Asia">Southeast Asia</div>
                 </div>
             </div>
-            <div class="controls-row">
-                <span class="filter-label">Tier</span>
-                <div class="filter-tags" id="tierFilters">
-                    <div class="tag active" data-tier="all">All</div>
-                    <div class="tag" data-tier="1">Tier 1 — Confirmed</div>
-                    <div class="tag" data-tier="2">Tier 2 — Active</div>
-                </div>
-            </div>
         </div>
 
         <div class="stats-bar" id="statsBar">Loading institutions&hellip;</div>
@@ -547,7 +525,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let allSchools = [];
     let currentView = 'grid';
     let currentRegion = 'all';
-    let currentTier = 'all';
     let currentSearch = '';
 
     const universitySection = document.getElementById('universitySection');
@@ -557,8 +534,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function buildCard(school) {
         const flag = countryFlags[school.country] || '';
-        const tierClass = `tier-badge-${school.tier_level}`;
-        const tierLabel = school.tier_level === 1 ? 'Tier 1' : `Tier ${school.tier_level}`;
         const nameHtml = school.website
             ? `<a href="${school.website}" target="_blank" rel="noopener noreferrer">${school.name}</a>`
             : school.name;
@@ -574,7 +549,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${school.description || ''}</p>
             </div>
             <div class="card-meta">
-                <span class="tier-badge ${tierClass}">${tierLabel}</span>
                 ${countryPill}
                 ${focusTags}
             </div>
@@ -584,7 +558,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterSchools() {
         return allSchools.filter(s => {
             if (currentRegion !== 'all' && s.region !== currentRegion) return false;
-            if (currentTier !== 'all' && String(s.tier_level) !== currentTier) return false;
             if (currentSearch) {
                 const haystack = [s.name, s.country, s.region, s.description, ...(s.hardware_focus || [])]
                     .join(' ').toLowerCase();
@@ -630,22 +603,17 @@ document.addEventListener('DOMContentLoaded', () => {
             byCountry[s.country].push(s);
         });
 
-        // Sort: Tier 1 count desc, then alphabetical
+        // Sort: institution count desc, then alphabetical
         const sortedCountries = Object.keys(byCountry).sort((a, b) => {
-            const t1a = byCountry[a].filter(s => s.tier_level === 1).length;
-            const t1b = byCountry[b].filter(s => s.tier_level === 1).length;
-            if (t1b !== t1a) return t1b - t1a;
-            return a.localeCompare(b);
+            const diff = byCountry[b].length - byCountry[a].length;
+            return diff !== 0 ? diff : a.localeCompare(b);
         });
 
         sortedCountries.forEach(country => {
-            const countrySchools = byCountry[country].sort((a, b) => a.tier_level - b.tier_level || a.name.localeCompare(b.name));
+            const countrySchools = byCountry[country].sort((a, b) => a.name.localeCompare(b.name));
             const flag = countryFlags[country] || '';
             const total = countrySchools.length;
-            const t1 = countrySchools.filter(s => s.tier_level === 1).length;
-            const countLabel = t1 > 0
-                ? `${total} institution${total !== 1 ? 's' : ''} · ${t1} Tier 1`
-                : `${total} institution${total !== 1 ? 's' : ''}`;
+            const countLabel = `${total} institution${total !== 1 ? 's' : ''}`;
 
             const section = document.createElement('div');
             section.className = 'country-section';
@@ -676,8 +644,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateStats(schools) {
         const countries = new Set(schools.map(s => s.country)).size;
-        const t1 = schools.filter(s => s.tier_level === 1).length;
-        statsBar.textContent = `Showing ${schools.length} institution${schools.length !== 1 ? 's' : ''} across ${countries} countr${countries !== 1 ? 'ies' : 'y'} · ${t1} Tier 1 confirmed`;
+        statsBar.textContent = `Showing ${schools.length} institution${schools.length !== 1 ? 's' : ''} across ${countries} countr${countries !== 1 ? 'ies' : 'y'}`;
     }
 
     function renderAll() {
@@ -715,16 +682,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('#regionFilters .tag').forEach(t => t.classList.remove('active'));
             tag.classList.add('active');
             currentRegion = tag.dataset.region;
-            renderAll();
-        });
-    });
-
-    // Tier filter
-    document.querySelectorAll('#tierFilters .tag').forEach(tag => {
-        tag.addEventListener('click', () => {
-            document.querySelectorAll('#tierFilters .tag').forEach(t => t.classList.remove('active'));
-            tag.classList.add('active');
-            currentTier = tag.dataset.tier;
             renderAll();
         });
     });
