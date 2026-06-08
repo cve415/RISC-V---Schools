@@ -1351,5 +1351,93 @@
     "hardware_focus": ["ECE Research", "Computer Architecture"],
     "website": "https://www.usc.edu.ph",
     "is_active_chapter": false
+  },
+  {
+    "id": "cmkl-university",
+    "name": "CMKL University",
+    "country": "Thailand",
+    "region": "Southeast Asia",
+    "tier_level": 2,
+    "description": "Thailand-based research university with a focus on engineering and technology. Faculty have participated in RISC-V International events, representing Southeast Asia's growing engagement with open-ISA hardware education.",
+    "hardware_focus": ["Computer Architecture", "Embedded Systems"],
+    "website": "https://www.cmkl.ac.th",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-genova",
+    "name": "University of Genova",
+    "country": "Italy",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Faculty researchers have presented RISC-V work at international conferences. DITEN and DIBRIS departments conduct embedded systems and digital architecture research aligned with RISC-V.",
+    "hardware_focus": ["Embedded Systems", "Digital Architecture"],
+    "website": "https://www.unige.it",
+    "is_active_chapter": false
+  },
+  {
+    "id": "hm-munich",
+    "name": "Munich University of Applied Sciences (Hochschule München)",
+    "country": "Germany",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Prof. Stefan Wallentowitz is a prominent RISC-V ecosystem figure and educator based here, contributing to open-source RISC-V tooling and teaching. Distinct from TU Munich; strong applied engineering focus with active RISC-V curriculum development.",
+    "hardware_focus": ["RISC-V Education", "Open-Source Hardware", "Embedded Systems"],
+    "website": "https://www.hm.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "inatel-brazil",
+    "name": "Inatel (Instituto Nacional de Telecomunicações)",
+    "country": "Brazil",
+    "region": "Latin America",
+    "tier_level": 2,
+    "description": "Brazil's national telecommunications technology institute. Faculty have participated in RISC-V International events; embedded systems and communications hardware programs make it a natural fit for open-ISA adoption in Brazil's growing semiconductor ecosystem.",
+    "hardware_focus": ["Telecommunications Hardware", "Embedded Systems"],
+    "website": "https://inatel.br",
+    "is_active_chapter": false
+  },
+  {
+    "id": "u-genova",
+    "name": "University of Genova",
+    "country": "Italy",
+    "region": "Europe",
+    "tier_level": 2,
+    "description": "Active RISC-V research presence with representation in the RISC-V International Academia & Training SIG. Computer engineering and electronics research programs with RISC-V integration.",
+    "hardware_focus": ["Computer Engineering Research", "RISC-V Architecture"],
+    "website": "https://www.unige.it",
+    "is_active_chapter": false
+  },
+  {
+    "id": "usm",
+    "name": "Universiti Sains Malaysia (USM)",
+    "country": "Malaysia",
+    "region": "Southeast Asia",
+    "tier_level": 1,
+    "description": "Formal research partnership with StarFive Technology includes donation of RISC-V educational development boards directly to the School of Electrical and Electronic Engineering for active coursework integration.",
+    "hardware_focus": ["RISC-V Development Boards", "Embedded Systems", "Electrical Engineering"],
+    "website": "https://www.usm.my",
+    "is_active_chapter": false
+  },
+  {
+    "id": "uthm",
+    "name": "Universiti Tun Hussein Onn Malaysia (UTHM)",
+    "country": "Malaysia",
+    "region": "Southeast Asia",
+    "tier_level": 1,
+    "description": "Published research documenting use of RISC-V processors in Computer Architecture and Microprocessor & Microcontroller courses as a direct replacement for outdated ISA models. One of Malaysia's clearest cases of formal RISC-V curriculum adoption.",
+    "hardware_focus": ["Computer Architecture", "Microprocessor & Microcontroller Courses"],
+    "website": "https://www.uthm.edu.my",
+    "is_active_chapter": false
+  },
+  {
+    "id": "asem-malaysia",
+    "name": "Advanced Semiconductor Academy of Malaysia (ASEM)",
+    "country": "Malaysia",
+    "region": "Southeast Asia",
+    "tier_level": 2,
+    "description": "Professional semiconductor training program in Cyberjaya operating the Global Semiconductor Exchange Program (GSEP). Curriculum includes intensive RISC-V computer architecture, assembly programming, and processor SoC design. Not a degree-granting institution but a key node in Malaysia's RISC-V workforce pipeline.",
+    "hardware_focus": ["RISC-V Assembly Programming", "Processor SoC Design", "Professional Training"],
+    "website": "https://asem.com.my",
+    "is_active_chapter": false
   }
 ]

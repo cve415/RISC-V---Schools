@@ -1,0 +1,85 @@
+name: Add a University
+description: Submit a university or research institution for inclusion in the RISC-V Global Academic Tracker.
+title: "[Add University] "
+labels: ["new-entry"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Institution Name
+      placeholder: e.g. ETH Zürich
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: e.g. Switzerland
+    validations:
+      required: true
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      options:
+        - United States
+        - Europe
+        - China
+        - India
+        - Latin America
+        - Southeast Asia
+        - Philippines
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Tier
+      description: "Tier 1 = confirmed coursework, published research, or silicon tapeout. Tier 2 = active use with partial verification."
+      options:
+        - "Tier 1 — Confirmed"
+        - "Tier 2 — Active"
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Department or Lab URL
+      placeholder: e.g. https://ee.ethz.ch
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 1–2 sentences describing how RISC-V is used (courses, research, hardware, tapeouts).
+      placeholder: e.g. CS359 Computer Architecture uses RISC-V. Active in national CPU design competitions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware_focus
+    attributes:
+      label: Hardware Focus Areas
+      description: List the main focus areas, one per line.
+      placeholder: |
+        FPGA Workbenches
+        Custom RTL Design
+        SoC Verification
+    validations:
+      required: true
+
+  - type: input
+    id: verification
+    attributes:
+      label: Verification Source
+      description: URL to a syllabus, published paper, GitHub repo, or official program page confirming RISC-V use.
+      placeholder: e.g. https://university.edu/courses/cs359
+    validations:
+      required: false

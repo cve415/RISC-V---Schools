@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RISC-V Academic Ecosystem Tracker</title>
+<title>RISC-V Global Academic Tracker</title>
+<meta name="description" content="An open-source directory tracking university programs worldwide that integrate RISC-V into hardware engineering curricula and advanced processor research. Filterable by region, tier, and focus area.">
+
+<!-- Open Graph — controls link preview when shared via email, Slack, LinkedIn -->
+<meta property="og:title" content="RISC-V Global Academic Tracker">
+<meta property="og:description" content="Tracking 123+ university programs across 6 regions integrating RISC-V into core hardware engineering and processor research.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cve415.github.io/RISC-V---Schools/">
+<meta property="og:image" content="https://cve415.github.io/RISC-V---Schools/riscv-by-country.png">
 
 <style>
 :root {
@@ -78,6 +86,7 @@ nav a:hover { color: var(--text); }
 }
 
 .hero p { font-size: 1.2rem; color: var(--text-secondary); max-width: 750px; }
+.hero-count { color: var(--text); font-weight: 600; }
 
 .page-tabs {
     max-width: 1200px;
@@ -199,6 +208,16 @@ nav a:hover { color: var(--text); }
     padding: 0 2rem;
     font-size: 0.85rem;
     color: var(--text-secondary);
+    min-height: 1.2em;
+}
+
+/* Loading state */
+.loading-state {
+    text-align: center;
+    padding: 4rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    grid-column: 1 / -1;
 }
 
 /* Grid */
@@ -361,6 +380,17 @@ nav a:hover { color: var(--text); }
 
 .card-link:hover { color: var(--text); }
 
+/* Empty projects state */
+.projects-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-secondary);
+    grid-column: 1 / -1;
+}
+
+.projects-empty p { margin-bottom: 0.5rem; }
+.projects-empty a { color: var(--text); text-decoration: underline; }
+
 footer {
     text-align: center;
     padding: 3rem;
@@ -381,18 +411,19 @@ footer a:hover { text-decoration: underline; }
     <nav>
         <div class="logo">RISC-V <span>Education Directory</span></div>
         <ul>
-            <li><a href="https://github.com/cve415/RISC-V---Schools" target="_blank">GitHub Repository</a></li>
+            <li><a href="https://github.com/cve415/RISC-V---Schools" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section class="hero">
-        <div class="badge">RISC-V International Academia &amp; Training SIG Initiative</div>
+        <div class="badge">Open-Source Community Resource &bull; Academia &amp; Training SIG</div>
         <h1>Mapping the next generation of builders and architects.</h1>
         <p>
-            open-source directory tracking prominent university programs integrating
-            RISC-V into core hardware engineering curricula and advanced processor research.
+            An open-source directory tracking <span id="heroCount" class="hero-count">123</span>
+            university programs across <span id="heroCountries" class="hero-count">22</span> countries
+            integrating RISC-V into core hardware engineering curricula and advanced processor research.
         </p>
     </section>
 
@@ -421,6 +452,7 @@ footer a:hover { text-decoration: underline; }
                     <div class="tag" data-region="India">India</div>
                     <div class="tag" data-region="Latin America">Latin America</div>
                     <div class="tag" data-region="Philippines">Philippines</div>
+                    <div class="tag" data-region="Southeast Asia">Southeast Asia</div>
                 </div>
             </div>
             <div class="controls-row">
@@ -433,10 +465,11 @@ footer a:hover { text-decoration: underline; }
             </div>
         </div>
 
-        <div class="stats-bar" id="statsBar"></div>
+        <div class="stats-bar" id="statsBar">Loading institutions&hellip;</div>
 
         <div class="grid-section" id="universitySection">
             <div class="features" id="universityGrid">
+                <div class="loading-state" id="loadingState">Loading&hellip;</div>
                 <div class="no-results" id="noResults">No institutions match your current filters.</div>
             </div>
         </div>
@@ -459,7 +492,10 @@ footer a:hover { text-decoration: underline; }
     <p>Compiled by <strong>Christopher Velasco</strong> &bull; Active Member, RISC-V International Academia &amp; Training SIG</p>
     <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-secondary);">
         Want to add your program? Submit an issue or PR via the
-        <a href="https://github.com/cve415/RISC-V---Schools" target="_blank" style="text-decoration: underline;">GitHub Repository</a>.
+        <a href="https://github.com/cve415/RISC-V---Schools" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">GitHub Repository</a>.
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-secondary);">
+        RISC-V&reg; is a registered trademark of RISC-V International. This is an independent community resource.
     </p>
 </footer>
 
@@ -490,6 +526,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'France': '🇫🇷',
         'Germany': '🇩🇪',
         'Brazil': '🇧🇷',
+        'Mexico': '🇲🇽',
+        'Chile': '🇨🇱',
+        'Argentina': '🇦🇷',
+        'Colombia': '🇨🇴',
         'Philippines': '🇵🇭',
         'Sweden': '🇸🇪',
         'Czech Republic': '🇨🇿',
@@ -498,13 +538,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'Greece': '🇬🇷',
         'Austria': '🇦🇹',
         'Belgium': '🇧🇪',
-        'Mexico': '🇲🇽',
-        'Chile': '🇨🇱',
-        'Argentina': '🇦🇷',
-        'Colombia': '🇨🇴',
+        'Albania': '🇦🇱',
+        'Thailand': '🇹🇭',
+        'Malaysia': '🇲🇾',
     };
 
-    // --- Universities: load from data/schools.json ---
+    // --- Universities ---
     let allSchools = [];
     let currentView = 'grid';
     let currentRegion = 'all';
@@ -513,6 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const universitySection = document.getElementById('universitySection');
     const noResults = document.getElementById('noResults');
+    const loadingState = document.getElementById('loadingState');
     const statsBar = document.getElementById('statsBar');
 
     function buildCard(school) {
@@ -520,7 +560,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tierClass = `tier-badge-${school.tier_level}`;
         const tierLabel = school.tier_level === 1 ? 'Tier 1' : `Tier ${school.tier_level}`;
         const nameHtml = school.website
-            ? `<a href="${school.website}" target="_blank">${school.name}</a>`
+            ? `<a href="${school.website}" target="_blank" rel="noopener noreferrer">${school.name}</a>`
             : school.name;
         const focusTags = (school.hardware_focus || []).slice(0, 3)
             .map(f => `<span class="focus-tag">${f}</span>`).join('');
@@ -584,14 +624,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Group by country
         const byCountry = {};
         schools.forEach(s => {
             if (!byCountry[s.country]) byCountry[s.country] = [];
             byCountry[s.country].push(s);
         });
 
-        // Sort countries: T1 count desc, then name
+        // Sort: Tier 1 count desc, then alphabetical
         const sortedCountries = Object.keys(byCountry).sort((a, b) => {
             const t1a = byCountry[a].filter(s => s.tier_level === 1).length;
             const t1b = byCountry[b].filter(s => s.tier_level === 1).length;
@@ -701,14 +740,25 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(r => r.json())
         .then(schools => {
             allSchools = schools;
+
+            // Remove loading state
+            if (loadingState) loadingState.remove();
+
+            // Update hero counts dynamically from actual data
+            const totalCountries = new Set(schools.map(s => s.country)).size;
+            document.getElementById('heroCount').textContent = schools.length;
+            document.getElementById('heroCountries').textContent = totalCountries;
+
             renderAll();
         })
         .catch(() => {
-            noResults.textContent = 'Could not load institutions data.';
+            if (loadingState) loadingState.remove();
+            statsBar.textContent = '';
+            noResults.textContent = 'Could not load institutions data. Please try again.';
             noResults.style.display = 'block';
         });
 
-    // --- Student Projects: load from data/projects.json ---
+    // --- Student Projects ---
     const projectGrid = document.getElementById('projectGrid');
     const noProjectResults = document.getElementById('noProjectResults');
     const projectSearchInput = document.getElementById('projectSearchInput');
@@ -717,6 +767,14 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('./data/projects.json')
         .then(r => r.json())
         .then(projects => {
+            if (!projects || projects.length === 0) {
+                projectGrid.innerHTML = `
+                    <div class="projects-empty">
+                        <p>Student projects are coming soon.</p>
+                        <p><a href="https://github.com/cve415/RISC-V---Schools" target="_blank" rel="noopener noreferrer">Submit a project via GitHub</a> to be featured here.</p>
+                    </div>`;
+                return;
+            }
             projects.forEach(p => {
                 const card = document.createElement('div');
                 card.className = 'card';
@@ -730,7 +788,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="category-badge">${p.category}</span>
                         <span class="school-badge">${p.school}</span>
                     </div>
-                    <a class="card-link" href="${p.url}" target="_blank">${p.url.replace('https://', '')} &#x2197;</a>
+                    <a class="card-link" href="${p.url}" target="_blank" rel="noopener noreferrer">${p.url.replace('https://', '')} &#x2197;</a>
                 `;
                 projectGrid.insertBefore(card, noProjectResults);
                 projectCards.push(card);
@@ -749,7 +807,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.display = match ? 'flex' : 'none';
             if (match) visible++;
         });
-        noProjectResults.style.display = visible === 0 ? 'block' : 'none';
+        noProjectResults.style.display = visible === 0 && term.length > 0 ? 'block' : 'none';
     });
 });
 </script>
