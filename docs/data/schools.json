@@ -231,6 +231,17 @@
     "is_active_chapter": false
   },
   {
+    "id": "harvey-mudd",
+    "name": "Harvey Mudd College",
+    "country": "USA",
+    "region": "United States",
+    "tier_level": 1,
+    "description": "Major academic hub for RISC-V development, driven by Prof. David Harris — co-author of 'Digital Design and Computer Architecture: RISC-V Edition.' Students build full-featured, open-source RISC-V microprocessors and SoCs from the ground up.",
+    "hardware_focus": ["Full Custom RISC-V SoC", "Digital Design Education", "Open-Source Processor Design"],
+    "website": "https://www.hmc.edu/engineering/",
+    "is_active_chapter": false
+  },
+  {
     "id": "miami-university",
     "name": "Miami University",
     "country": "USA",
