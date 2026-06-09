@@ -83,7 +83,6 @@ This list doubles as a target list for guide.md, introductory content, and any b
 - **Verification needed:** Identify which faculty attended RISC-V events; cross-reference with Inatel faculty directory for coursework or lab adoption
 - **Contact lead:** RISC-V International event participant roster
 - **Guide relevance:** Brazil's telecom hardware pipeline — strong embedded systems adoption angle
-
 ---
 
 ## Summary Stats
