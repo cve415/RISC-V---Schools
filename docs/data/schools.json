@@ -209,17 +209,6 @@
     "is_active_chapter": false
   },
   {
-    "id": "tufts",
-    "name": "Tufts University",
-    "country": "USA",
-    "region": "United States",
-    "tier_level": 1,
-    "description": "Foundational assembly, compilation targets, and machine-level computing fundamentals over native RV32I.",
-    "hardware_focus": ["Machine-Level Computing (RV32I)"],
-    "website": "https://cs.tufts.edu",
-    "is_active_chapter": false
-  },
-  {
     "id": "uc-santa-cruz",
     "name": "University of California, Santa Cruz",
     "country": "USA",
@@ -1232,17 +1221,6 @@
     "is_active_chapter": false
   },
   {
-    "id": "utfsm",
-    "name": "Universidad Técnica Federico Santa María",
-    "country": "Chile",
-    "region": "Latin America",
-    "tier_level": 2,
-    "description": "Chile's most engineering-focused university with a strong FPGA lab culture. RISC-V appears in digital systems, computer architecture, and capstone project contexts — a natural fit for hardware implementation courses.",
-    "hardware_focus": ["FPGA Workbenches", "Digital Systems", "Capstone Projects"],
-    "website": "https://www.usm.cl",
-    "is_active_chapter": false
-  },
-  {
     "id": "uniandes-colombia",
     "name": "Universidad de los Andes",
     "country": "Colombia",
@@ -1361,17 +1339,6 @@
     "description": "Prof. Stefan Wallentowitz is a prominent RISC-V ecosystem figure and educator based here, contributing to open-source RISC-V tooling and teaching. Distinct from TU Munich; strong applied engineering focus with active RISC-V curriculum development.",
     "hardware_focus": ["RISC-V Education", "Open-Source Hardware", "Embedded Systems"],
     "website": "https://www.hm.edu",
-    "is_active_chapter": false
-  },
-  {
-    "id": "inatel-brazil",
-    "name": "Inatel (Instituto Nacional de Telecomunicações)",
-    "country": "Brazil",
-    "region": "Latin America",
-    "tier_level": 2,
-    "description": "Brazil's national telecommunications technology institute. Faculty have participated in RISC-V International events; embedded systems and communications hardware programs make it a natural fit for open-ISA adoption in Brazil's growing semiconductor ecosystem.",
-    "hardware_focus": ["Telecommunications Hardware", "Embedded Systems"],
-    "website": "https://inatel.br",
     "is_active_chapter": false
   },
   {
