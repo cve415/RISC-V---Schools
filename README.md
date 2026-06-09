@@ -1,12 +1,11 @@
-# RISC-V Global Academic Tracker
+# RISC-V Global Academic Directory
 
 An open-source directory mapping universities and research groups worldwide where RISC-V is part of the curriculum, the lab, or the research agenda.
 
-**Live site:** https://cve415.github.io/RISC-V---Schools/
+**Live site:** https://cve415.github.io/RISC-V-Education/
 
 ---
 
-## What This Is
 
 Tracking RISC-V academic adoption globally is highly fragmented. This repository aggregates verified institutional data into a single, filterable resource — organized by region and hardware focus area.
 
