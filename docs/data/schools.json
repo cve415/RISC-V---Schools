@@ -1298,13 +1298,35 @@
     "is_active_chapter": false
   },
   {
+    "id": "nthu",
+    "name": "National Tsing Hua University",
+    "country": "Taiwan",
+    "region": "Southeast Asia",
+    "tier_level": 1,
+    "description": "EE 3450 Computer Architecture course uses RISC-V ISA; course staff designed RISC-V programming assignments confirmed in published faculty CV. ICLAB course includes a RISC-V 5-stage pipelined RV32 processor design project. NTHU EE graduates have gone on to Andes Technology, Taiwan's leading RISC-V IP company.",
+    "hardware_focus": ["Computer Architecture", "RISC-V Processor Design", "FPGA Workbenches"],
+    "website": "https://www.nthu.edu.tw",
+    "is_active_chapter": false
+  },
+  {
+    "id": "nycu",
+    "name": "National Yang Ming Chiao Tung University",
+    "country": "Taiwan",
+    "region": "Southeast Asia",
+    "tier_level": 1,
+    "description": "Prof. Chun-Jen Tsai's group at the Institute of Computer Science and Engineering published peer-reviewed RISC-V SoC research: 'Embedded TCP/IP Controller for a RISC-V SoC' (VLSI-SoC 2022, DOI: 10.1109/VLSI-SoC54400.2022.9939600). Open-source RISC-V application processor with embedded networking stack.",
+    "hardware_focus": ["RISC-V SoC Design", "Embedded Systems", "VLSI"],
+    "website": "https://www.nycu.edu.tw",
+    "is_active_chapter": false
+  },
+  {
     "id": "up-diliman",
     "name": "University of the Philippines Diliman",
     "country": "Philippines",
     "region": "Philippines",
     "tier_level": 1,
-    "description": "Most likely Philippine institution with documented RISC-V exposure through architecture research and open-ISA coursework. Microelectronics and Microprocessors Lab with ECE and CS programs.",
-    "hardware_focus": ["Computer Architecture", "Open-ISA Coursework"],
+    "description": "EEEI researchers (Neri et al.) at the Center for Integrated Circuits and Devices Research (CIDR) developed and documented an FPGA-based custom RV32IMC processor — implementing the base 32-bit integer ISA with Multiplication/Division and Compressed instruction extensions.",
+    "hardware_focus": ["Custom RTL / FPGA Design", "Computer Architecture"],
     "website": "https://upd.edu.ph",
     "is_active_chapter": false
   },
