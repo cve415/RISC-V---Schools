@@ -555,7 +555,7 @@
     "country": "Belgium",
     "region": "Europe",
     "tier_level": 2,
-    "description": "Marton Bognar (imec-DistriNet) presented hardware security work on RISC-V at RISC-V Europe 2023. Prof. Frank Piessens's security group. imec's industrial connections create strong applied RISC-V exposure.",
+    "description": "Marton Bognar (imec-DistriNet) presented hardware security research on RISC-V at RISC-V Europe 2023. Prof. Frank Piessens's security group at imec-DistriNet works on trusted execution environments and hardware security using RISC-V infrastructure.",
     "hardware_focus": ["Hardware Security", "Trusted Execution Environments"],
     "website": "https://www.kuleuven.be",
     "is_active_chapter": false
@@ -1039,7 +1039,7 @@
     "country": "India",
     "region": "India",
     "tier_level": 2,
-    "description": "Apex technical university for Tamil Nadu, affiliating hundreds of engineering colleges. Given proximity to IIT Madras and the SHAKTI ecosystem, RISC-V exposure is documented through affiliated faculty collaboration.",
+    "description": "Apex technical university for Tamil Nadu, affiliating hundreds of engineering colleges. Faculty collaboration with IIT Madras has brought RISC-V into the curriculum through the SHAKTI ecosystem — the open-source RISC-V processor project developed at IIT Madras.",
     "hardware_focus": ["Computer Architecture", "Embedded Systems"],
     "website": "https://www.annauniv.edu",
     "is_active_chapter": false
