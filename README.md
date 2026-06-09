@@ -1,6 +1,6 @@
 # RISC-V Global Academic Tracker
 
-An open-source directory mapping universities worldwide that have integrated RISC-V into core hardware engineering curricula, advanced processor research, or student-led silicon projects.
+An open-source directory mapping universities and research groups worldwide where RISC-V is part of the curriculum, the lab, or the research agenda.
 
 **Live site:** _coming soon via GitHub Pages_
 
@@ -8,9 +8,9 @@ An open-source directory mapping universities worldwide that have integrated RIS
 
 ## What This Is
 
-Tracking RISC-V academic adoption globally is highly fragmented. This repository aggregates verified institutional data into a single, filterable resource — organized by region, tier, and hardware focus area.
+Tracking RISC-V academic adoption globally is highly fragmented. This repository aggregates verified institutional data into a single, filterable resource — organized by region and hardware focus area.
 
-**Current coverage:** 50+ institutions across the United States, Europe, China, India, Latin America, and the Philippines.
+**Current coverage:** 125+ institutions across 26 countries — United States, Europe, China, Taiwan, India, Southeast Asia, Philippines, and Latin America.
 
 Institutions are classified into two tiers:
 
@@ -28,7 +28,9 @@ docs/               # GitHub Pages site (HTML + JSON datasets)
   data/
     schools.json    # Canonical institution dataset
     projects.json   # Student and academic project registry
-internal/           # Working files and regional research notes (not served publicly)
+internal/           # Working files, research notes, and watchlist (not served publicly)
+  guide.md          # University program framework and curriculum blueprint
+  watchlist.md      # Candidate institutions pending verification
 ```
 
 ---
@@ -81,7 +83,7 @@ If a tier classification, website, or description is outdated, open an issue or 
 ## Maintainer
 
 **Christopher Velasco** — RISC-V International Academia & Training SIG member  
-Compiled from primary sources including course catalogs, NPTEL, RISC-V Summit publications, and institutional research pages.
+Compiled from primary sources including course catalogs, published technical reports, NPTEL, RISC-V Summit and RISC-V Europe publications, and institutional research pages.
 
 ---
 
