@@ -1,7 +1,7 @@
 # University Program Framework
 
 
-This program provides an open, accessible, and progressive blueprint for universities to transition or expand their Computer Science (CS) and Computer Engineering (CE) curricula into the RISC-V ecosystem.
+Universities globally are shifting toward RISC-V because it allows students to study a non-proprietary architecture that is actively being used by major companies like Qualcomm and Google. This program provides an open, accessible, and progressive blueprint for universities to transition or expand their Computer Science (CS) and Computer Engineering (CE) curricula into the RISC-V ecosystem.
 
 ---
 
