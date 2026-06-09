@@ -1,0 +1,139 @@
+# Africa — RISC-V Education Candidates
+
+Research pass identifying African institutions with CS/EE programs and signals of RISC-V-relevant activity.
+Status codes: potential = strong candidate, no RISC-V evidence yet | research_verified = documented RISC-V project or coursework
+
+---
+
+## Senegal
+
+### Université Cheikh Anta Diop de Dakar (UCAD)
+City: Dakar
+Units: Faculty of Science and Technology (FST), École Supérieure Polytechnique (ESP)
+CS degree: Yes | CE/EE degree: Yes
+Status: potential
+
+Signals:
+- Flagship national university with computer science and multiple engineering disciplines
+- ESP departments in Génie Informatique, Génie Électrique, Génie Mécanique
+- Hosted Senegal's first quantum computing school in 2025
+
+---
+
+### École Polytechnique de Thiès (EPT)
+City: Thiès
+CS degree: Yes | CE/EE degree: Yes
+Status: potential
+
+Signals:
+- Public engineering school with licence, master, and ingénieur cycles
+- Programmes in génie électrique, électromécanique, informatique and related technologies
+- Ranked among top universities for computer science in Senegal
+
+---
+
+### Université Gaston Berger (UGB)
+City: Saint-Louis
+Units: Faculty of Applied Sciences and Technology
+CS degree: Yes | CE/EE degree: Yes
+Status: potential
+
+Signals:
+- Listed as a top-3 university for computer science in Senegal
+- Strong applied science and technology orientation
+
+---
+
+### Université de Thiès / Université Iba Der Thiam
+City: Thiès
+Units: Engineering and Technology faculties (hosting EPT and related programmes)
+CS degree: Yes | CE/EE degree: Yes
+Status: potential
+
+Signals:
+- University associated with EPT and engineering programmes
+- Included among leading computer science institutions in national rankings
+
+---
+
+## Nigeria
+
+### University of Lagos (UNILAG)
+City: Lagos
+Units: Faculty of Engineering, Faculty of Computing and Informatics
+CS degree: Yes | CE/EE degree: Yes
+Status: potential
+
+Signals:
+- Recognized as a leading Nigerian university for Computer Engineering
+- New Faculty of Computing and Informatics with departments in Computer Science, Intelligent Systems and Robotics, and Cybersecurity
+
+---
+
+### Lagos State University (LASU)
+City: Lagos
+Units: Department of Electronics and Computer Engineering
+CS degree: Yes | CE/EE degree: Yes
+Status: potential
+
+Signals:
+- Dedicated Electronics and Computer Engineering department established in the 1980s
+- Identified as a fast-rising technology education institution in Nigeria's economic center
+
+---
+
+## Egypt
+
+### Ain Shams University — Faculty of Engineering
+City: Cairo
+Units: Computer and Systems Engineering Department
+CS degree: Yes | CE/EE degree: Yes
+Status: RESEARCH VERIFIED (research_project)
+
+RISC-V evidence:
+- Research project: OneAppRISCV — Application Specific RISC-V Core Generator
+- Funded under ITIDA's ITAC preliminary research programme
+
+---
+
+### Alamein International University (AIU)
+City: New Alamein
+Units: Faculty of Engineering and Computer Science
+CS degree: Yes | CE/EE degree: Yes
+Status: RESEARCH VERIFIED (capstone_project)
+
+RISC-V evidence:
+- Graduation project: "Design and Implementation of a RISC-V Architecture" — RV64 microarchitecture design
+- Mentored by industry partner Si-Vision
+
+---
+
+## South Africa
+
+### University of Cape Town (UCT)
+City: Cape Town
+Units: Electrical Engineering, Computer Engineering / Embedded Systems research groups
+CS degree: Yes | CE/EE degree: Yes
+Status: RESEARCH VERIFIED (research_project)
+
+RISC-V evidence:
+- 2024 dissertation: "Design and Implementation of a RISC-V Based LoRa Module"
+- Prototype softcore RISC-V end-node PCB design
+
+---
+
+## Summary
+
+| Country      | Institution | Status             |
+|--------------|-------------|--------------------|
+| Senegal      | UCAD        | potential          |
+| Senegal      | EPT         | potential          |
+| Senegal      | UGB         | potential          |
+| Senegal      | Univ. Thiès | potential          |
+| Nigeria      | UNILAG      | potential          |
+| Nigeria      | LASU        | potential          |
+| Egypt        | Ain Shams   | research_verified  |
+| Egypt        | AIU         | research_verified  |
+| South Africa | UCT         | research_verified  |
+
+Verified candidates (Ain Shams, AIU, UCT) are ready for promotion to schools.json once entries are drafted.

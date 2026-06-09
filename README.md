@@ -1,6 +1,6 @@
 # RISC-V Global Academic Directory
 
-An open-source directory mapping universities and research groups worldwide where RISC-V is part of the curriculum, the lab, or the research agenda.
+An open-source directory mapping universities and research groups worldwide where RISC-V appears in the curriculum, a student project, or a published paper.
 
 **Live site:** https://cve415.github.io/RISC-V-Education/
 
