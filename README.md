@@ -6,7 +6,6 @@ An open-source directory mapping universities and research groups worldwide wher
 
 ---
 
-## What This Is
 
 Tracking RISC-V academic adoption globally is highly fragmented. This repository aggregates verified institutional data into a single, filterable resource — organized by region and hardware focus area.
 
