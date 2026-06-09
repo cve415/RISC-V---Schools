@@ -111,16 +111,14 @@ Building a world-class semiconductor education lab with RISC-V is uniquely affor
 
 ## 📊 Cost Breakdown and Hardware Options
 
-Educational Tier,Infrastructure Model,Hardware Requirements & Recommendations,Estimated Cost (Per Student / Workstation)
-Tier 1: Foundations,Non-RISC-V (Software Emulation),"Existing x86/ARM desktop lab PCs or student laptops running open-source instruction-set simulators (Jupiter, Venus, QEMU).",$0(No new hardware needed)
+| Tier | Infrastructure | Hardware | Cost |
+|------|---------------|----------|------|
+| **Tier 1: Foundations** | Software Emulation | Existing x86/ARM lab PCs or student laptops running Jupiter, Venus, or QEMU | $0 — no new hardware needed |
+| **Tier 2: Embedded Systems** | Native RISC-V MCU Boards | Espressif ESP32-H2 / C3 / C6 · Milk-V Duo · SparkFun RED-V RedBoard | $5–$15 per student |
+| **Tier 3: Advanced Architecture** | Native RISC-V FPGA Workbenches | Digilent Basys 3 (Artix-7 35T) · Digilent Nexys A7 (Artix-7 50T/100T) | $150–$350 per workstation |
+| **Tier 3: Linux Deployment** | Native RISC-V SBCs | StarFive VisionFive 2 · Lichee Pi 4A (TH1520) | $70–$120 per board |
+| **Tier 3: Next-Gen Workstation** | Modular RISC-V Laptop | DeepComputing DC-ROMA RISC-V Mainboard III (SpacemiT K3, RVA23 profile, 60 TOPS AI, Framework Laptop 13 compatible) | $699 |
 
-Tier 2: Embedded Systems,Native RISC-V (Silicon MCU Boards),Microcontroller evaluation boards:• Espressif ESP32-H2 / ESP32-C3 / ESP32-C6 (Excellent Wi-Fi/BLE options)• Milk-V Duo (Dual-core CV1800B chip)• SparkFun RED-V RedBoard (Featuring SiFive FE310 or CH32V chips),$5 – $15(Highly scalable for large classrooms)
-
-Tier 3: Advanced Architecture,Native RISC-V (FPGA Workbenches),FPGA Development Kits for synthesis & RTL simulation:• Digilent Basys 3 (Xilinx Artix-7 35T)• Digilent Nexys A7 (Xilinx Artix-7 50T or 100T),$150 – $350(Shared workstations across lab cycles)
-
-Tier 3: System / Linux Deployment,Native RISC-V (Linux SBCs),"Single-Board Computers for operating system, compiler, and toolchain development:• StarFive VisionFive 2 (High-performance quad-core 64-bit)• Lichee Pi 4A (Altheat TH1520 platform)",$70 – $120(Ideal for operating systems courses)
-
-Tier 3: Next-Gen Dev Workstations,Native RISC-V (Modular Laptop / Hardware Integration),"Premium Developer Hardware:• DeepComputing DC-ROMA RISC-V Mainboard III (SpacemiT K3, first laptop mainboard to support the RVA23 profile, up to 60 TOPS general-purpose AI computing, fully compatible with the Framework Laptop 13 architecture)","$699.00(Designed for advanced capstones, AI workloads, and graduate researchers)"
 ---
 
 # 💡 Cost-Saving Strategy
