@@ -29,7 +29,6 @@ docs/               # GitHub Pages site (HTML + JSON datasets)
     schools.json    # Canonical institution dataset
     projects.json   # Student and academic project registry
 internal/           # Working files, research notes, and watchlist (not served publicly)
-  guide.md          # University program framework and curriculum blueprint
   watchlist.md      # Candidate institutions pending verification
 ```
 
