@@ -66,6 +66,28 @@
     "is_active_chapter": false
   },
   {
+    "id": "asu",
+    "name": "Arizona State University",
+    "country": "USA",
+    "region": "United States",
+    "tier_level": 1,
+    "description": "STAM Center published a RISC-V development platform project in 2022 (stamcenter.asu.edu), confirming active RISC-V hardware integration within ASU's engineering research programs.",
+    "hardware_focus": ["FPGA Workbenches", "Secure Microelectronics Design"],
+    "website": "https://ecee.engineering.asu.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "purdue",
+    "name": "Purdue University",
+    "country": "USA",
+    "region": "United States",
+    "tier_level": 1,
+    "description": "CAP compilers course (cap.ecn.purdue.edu) includes a RISC-V backend project step, confirming RISC-V integration into Purdue's compiler engineering curriculum.",
+    "hardware_focus": ["Compilers & Toolchain", "Computer Architecture"],
+    "website": "https://engineering.purdue.edu/ECE",
+    "is_active_chapter": false
+  },
+  {
     "id": "unlv",
     "name": "University of Nevada, Las Vegas",
     "country": "USA",
@@ -74,17 +96,6 @@
     "description": "International champion of the RVfpga training initiative, providing architecture lab blueprints worldwide.",
     "hardware_focus": ["RVfpga Initiative", "Architecture Labs"],
     "website": "https://www.unlv.edu/ece",
-    "is_active_chapter": false
-  },
-  {
-    "id": "asu",
-    "name": "Arizona State University",
-    "country": "USA",
-    "region": "United States",
-    "tier_level": 1,
-    "description": "Open-standard ISAs as a cornerstone of senior-level FPGA-based system integration and secure microelectronics.",
-    "hardware_focus": ["FPGA Workbenches", "Secure Microelectronics Design"],
-    "website": "https://ecee.engineering.asu.edu",
     "is_active_chapter": false
   },
   {
@@ -143,28 +154,6 @@
     "is_active_chapter": false
   },
   {
-    "id": "penn-state",
-    "name": "Penn State University",
-    "country": "USA",
-    "region": "United States",
-    "tier_level": 1,
-    "description": "Integrating resilient RISC-V variants into space-grade, radiation-hardened satellite computing.",
-    "hardware_focus": ["Space-Grade & Radiation-Hardened Architectures"],
-    "website": "https://eecs.psu.edu",
-    "is_active_chapter": false
-  },
-  {
-    "id": "purdue",
-    "name": "Purdue University",
-    "country": "USA",
-    "region": "United States",
-    "tier_level": 1,
-    "description": "Open hardware verification, SoC methodologies, and modern system constraints embedded in core engineering.",
-    "hardware_focus": ["SoC Design", "Hardware Verification"],
-    "website": "https://engineering.purdue.edu/ECE",
-    "is_active_chapter": false
-  },
-  {
     "id": "georgia-tech",
     "name": "Georgia Institute of Technology",
     "country": "USA",
@@ -192,9 +181,20 @@
     "country": "USA",
     "region": "United States",
     "tier_level": 1,
-    "description": "VLSI physical design and instruction pipeline optimization taught via open-standard ISA frameworks.",
-    "hardware_focus": ["VLSI Design", "Architecture Instruction"],
+    "description": "Luke Nelson and Xi Wang (UW CSE) published Technical Report UW-CSE-2019-11-01 — 'Developing security monitors on RISC-V' — using HiFive Unleashed hardware (SiFive FU540-C000 SoC). Research covers PMP-based memory isolation and software enclaves on RISC-V.",
+    "hardware_focus": ["Hardware Security", "RISC-V Systems Research"],
     "website": "https://www.cs.washington.edu",
+    "is_active_chapter": false
+  },
+  {
+    "id": "tufts",
+    "name": "Tufts University",
+    "country": "USA",
+    "region": "United States",
+    "tier_level": 1,
+    "description": "EE 201: Fundamentals of Computer Systems and Engineering uses the RISC-V ISA to introduce students to digital design, assembly programming, and processor construction.",
+    "hardware_focus": ["Computer Architecture", "Assembly Programming", "Digital Design"],
+    "website": "https://engineering.tufts.edu",
     "is_active_chapter": false
   },
   {
@@ -228,17 +228,6 @@
     "description": "Major academic hub for RISC-V development, driven by Prof. David Harris — co-author of 'Digital Design and Computer Architecture: RISC-V Edition.' Students build full-featured, open-source RISC-V microprocessors and SoCs from the ground up.",
     "hardware_focus": ["Full Custom RISC-V SoC", "Digital Design Education", "Open-Source Processor Design"],
     "website": "https://www.hmc.edu/engineering/",
-    "is_active_chapter": false
-  },
-  {
-    "id": "miami-university",
-    "name": "Miami University",
-    "country": "USA",
-    "region": "United States",
-    "tier_level": 2,
-    "description": "ECE lab-based RISC-V coursework with embedded systems integration.",
-    "hardware_focus": ["Software Emulation", "Silicon MCU Boards"],
-    "website": "https://miamioh.edu",
     "is_active_chapter": false
   },
   {
