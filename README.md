@@ -1,4 +1,4 @@
-# RISC-V Global Academic Tracker
+# RISC-V Global Academic Directory
 
 An open-source directory mapping universities and research groups worldwide where RISC-V is part of the curriculum, the lab, or the research agenda.
 
