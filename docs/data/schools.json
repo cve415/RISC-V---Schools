@@ -1309,50 +1309,6 @@
     "is_active_chapter": false
   },
   {
-    "id": "dlsu",
-    "name": "De La Salle University",
-    "country": "Philippines",
-    "region": "Philippines",
-    "tier_level": 2,
-    "description": "Strong ECE and CS programs; embedded systems and computer organization courses make this a natural candidate for RISC-V integration. DLSU has industry-connected labs tracking open ISA trends.",
-    "hardware_focus": ["Embedded Systems", "Computer Organization"],
-    "website": "https://www.dlsu.edu.ph",
-    "is_active_chapter": false
-  },
-  {
-    "id": "mapua-university",
-    "name": "Mapúa University",
-    "country": "Philippines",
-    "region": "Philippines",
-    "tier_level": 2,
-    "description": "Engineering-focused institution with ECE and CE programs. Practical, lab-intensive culture aligns well with RISC-V FPGA integration and hands-on architecture coursework.",
-    "hardware_focus": ["FPGA Workbenches", "Embedded Systems"],
-    "website": "https://www.mapua.edu.ph",
-    "is_active_chapter": false
-  },
-  {
-    "id": "msu-iit",
-    "name": "Mindanao State University – Iligan Institute of Technology",
-    "country": "Philippines",
-    "region": "Philippines",
-    "tier_level": 2,
-    "description": "The strongest engineering school in Mindanao and the most likely Philippine regional institution to achieve Tier 1 status. ECE and CS programs are research-active; DOST-ERDT network membership accelerates open-ISA adoption.",
-    "hardware_focus": ["Computer Architecture", "Embedded Systems Research"],
-    "website": "https://www.msuiligan.edu.ph",
-    "is_active_chapter": false
-  },
-  {
-    "id": "usc-cebu",
-    "name": "University of San Carlos",
-    "country": "Philippines",
-    "region": "Philippines",
-    "tier_level": 2,
-    "description": "One of the oldest and most research-active private universities in the Visayas with strong ECE and CE programs. Research culture makes it a likely early adopter of RISC-V hardware instruction.",
-    "hardware_focus": ["ECE Research", "Computer Architecture"],
-    "website": "https://www.usc.edu.ph",
-    "is_active_chapter": false
-  },
-  {
     "id": "cmkl-university",
     "name": "CMKL University",
     "country": "Thailand",
