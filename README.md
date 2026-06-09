@@ -2,7 +2,7 @@
 
 An open-source directory mapping universities and research groups worldwide where RISC-V is part of the curriculum, the lab, or the research agenda.
 
-**Live site:** _coming soon via GitHub Pages_
+**Live site:** https://cve415.github.io/RISC-V---Schools/
 
 ---
 
